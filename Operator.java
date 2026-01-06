@@ -18,6 +18,11 @@ public class Operator {
        // ++num;
         num += 1;
 
+        // num--;
+        // num = num - 1;
+        // --num;
+        num -= 1;
+
         System.out.println(num);
 
         System.out.println(" Add : " + Addition + " Sub : " + Substraction +
@@ -30,6 +35,8 @@ public class Operator {
 
     Post-Increment (var++) - Increament Value by one after fetch the value.
     Pre-Increment (++var) - Increament Value by one before fetch the value.
+    Post-Decrement (var--) - Decreament Value by one after fetch the value.
+    Pre-Decrement (--var) - Decreament Value by one before fetch the value.
     Modulus (%)  - It will gives remender.
     Divide (/) - It will gives quotient.
     Multply (*) - It will gives Multiplication.
