@@ -40,25 +40,29 @@ public class Iteration {
 }
 
 /*
-    # Loop - iteration
-        - Repeating same thing but condition based
+    Loop (Iteration):
+- Used to repeat the same task based on a condition.
 
-        * Types of Loop
-        - while, do while and for  and  nested loop
+Types of Loops in Java:
 
-        * we can use any loop at any scenario and any point but best practices is :
+1) while loop:
+- Condition is checked first.
+- Loop runs only if condition is true.
+- Used when end condition is not clearly known.
+- Example: reading a file.
 
-        " For Loop " 
-        - when we know finite iteration and condition well.
-        - ex. print 1-100 numbers
+2) do-while loop:
+- Executes code at least once.
+- Condition is checked after execution.
+- Example: login or security checks.
 
-        " While Loop " 
-        - when we dont about end of itearation well.
-        - ex. reading any file 
+3) for loop:
+- Used when number of iterations is known.
+- Best for fixed ranges.
+- Example: print numbers from 1 to 100.
 
-        " Do While Loop "
-        - when we dont about condition but we have to run code atleast once 
-        - ex. security checks 
-        
+Nested Loop:
+- One loop inside another loop.
+- Used for tables, patterns, schedules, etc.
 
 */

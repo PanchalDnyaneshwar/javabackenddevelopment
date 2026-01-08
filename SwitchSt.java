@@ -1,63 +1,64 @@
 public class SwitchSt {
+
     public static void main(String[] args) {
-        
-        int n = 5;
 
-            switch (n) {
+        int day = 5;
 
-                case 1:
-                    System.out.println("Monday");
-                    break;
+        switch (day) {
 
-                case 2:
-                    System.out.println("Tuesday");
-                    break;
+            case 1:
+                System.out.println("Monday");
+                break;
 
-                case 3:
-                    System.out.println("Wensday");
-                    break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
 
-                case 4:
-                    System.out.println("Thursday");
-                    break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
 
-                case 5:
-                    System.out.println("Friday");
-                    break;
+            case 4:
+                System.out.println("Thursday");
+                break;
 
-                case 6:
-                    System.out.println("Saturday");
-                    break;
+            case 5:
+                System.out.println("Friday");
+                break;
 
-                case 7:
-                    System.out.println("Sunday");
-                    break;
+            case 6:
+                System.out.println("Saturday");
+                break;
 
-                default:
-                    System.out.println("Invalid Day number");
-                    break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+
+            default:
+                System.out.println("Invalid day number");
         }
-
-        // if (n == 1)
-        //     System.out.println("Monday");
-        // else if (n == 2)
-        //     System.out.println("Tuesday"); 
-        // else if (n == 2)
-        //     System.out.println("Tuesday"); 
-        // else if (n == 2)
-        //     System.out.println("Tuesday"); 
-        // else if (n == 2)
-        //     System.out.println("Tuesday"); 
-        // else if (n == 2)
-        //     System.out.println("Tuesday"); 
-        // else
-        //     System.out.println("Sunday");
-
     }
 }
 
 /*
-    write less code than if else-if else in switch statement.
-    According to  condition swich the perticular case code.
-    important is write break keyword after every case which is prevent to runs next cases which is not ok as per conditions.
+    switch Statement:
+- Used to execute one block of code from multiple choices.
+- It is cleaner than long if–else-if chains.
+
+How it works:
+- The value of the variable is matched with case values.
+- Matching case code is executed.
+
+break Keyword:
+- Stops execution after a matching case.
+- Prevents execution of next cases (fall-through).
+
+default:
+- Executes when no case matches.
+- Optional but recommended.
+
+Use Case:
+- Best when checking one variable against fixed values.
+- Example: days, menu options, status codes.
+
 */

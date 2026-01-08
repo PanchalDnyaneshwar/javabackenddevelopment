@@ -1,58 +1,51 @@
 public class Demo {
+
     public static void main(String[] args) {
-        
+
         int x = 6;
         int y = 4;
 
         double a = 15.8;
         double b = 9.4;
 
-    //    boolean res = x >= y;
-    //    boolean res = x <= y;
-    //    boolean res = x > y;
-    //    boolean res = x < y;
-    //    boolean res = x != y; 
-    //    boolean res = x == y; 
+        // Logical OR example
+        boolean result = (x < y) || (a > b);
 
-        // boolean res = x>y && a>b;
-        //  boolean res = x<y && a>b;
-        //  boolean res = x>y || a>b;
-         boolean res = x<y || a>b;
+        // NOT operator example
+        boolean check = x < y;
 
-        boolean not = x < y;
-
-        System.out.println(!not);
-        System.out.println(res);
+        System.out.println(!check);  // reverses false to true
+        System.out.println(result);
     }
 }
 
+
 /*
-    # Comparison Operators - returns True / False (boolean)
+    Comparison Operators:
+- Used to compare two values.
+- Always return boolean (true / false).
 
-    < - less than 
-    > - greater than 
-    ! - not
-    == - equal to
-    != - not equal to 
-    <= - greater than equal to
-    >= - less than equal to
+<   : less than
+>   : greater than
+<=  : less than or equal to
+>=  : greater than or equal to
+==  : equal to
+!=  : not equal to
 
-    # Assignment Operators - assign the value
+Logical Operators:
+- Used to combine conditions.
 
-    = - assigment
+&& (AND):
+- Returns true only if ALL conditions are true.
 
-    # Logical Operators
+|| (OR):
+- Returns true if ANY ONE condition is true.
 
-    * && - AND operator 
-    - check all values are satisfy condition then only gives TRUE otherwise result will always be FALSE.
+! (NOT):
+- Reverses the result.
+- true becomes false, false becomes true.
 
-    * || - OR operator 
-    - check any one value from all values are satisfy condition then  gives TRUE otherwise result will always be FALSE.
-
-    * ! - NOT Operator
-    - if we want check condtion is not true or reverse of resulting values that time we use ! operater.
-
-      ex. var = !(true);
-          var = false. 
+Assignment Operator:
+= is used to assign a value to a variable.
 
 */
