@@ -499,3 +499,103 @@ One-Line Interview Answer:
 
 - Method overriding is when a child class provides
   a specific implementation of a parent class method.
+
+     Polymorphism:
+
+- Poly means many.
+- Morphism means behaviour.
+- One method shows different behaviour.
+
+Types of Polymorphism:
+
+1) Compile-time Polymorphism:
+- Method Overloading
+- Happens at compile time.
+- Same method name, different parameters.
+
+2) Run-time Polymorphism:
+- Method Overriding
+- Happens at runtime.
+- Parent reference, child object.
+
+Runtime Polymorphism Example:
+
+A obj;
+obj = new B();
+obj.show();
+
+- Method call depends on object type.
+- Not on reference type.
+
+Dynamic Method Dispatch:
+
+- Process of calling overridden method at runtime.
+- JVM decides which method to execute.
+- Based on object created.
+
+Early Binding:
+- Compile-time binding.
+- Method overloading.
+
+Late Binding:
+- Runtime binding.
+- Method overriding.
+
+Important Interview Points:
+
+- Polymorphism improves flexibility.
+- Parent reference can refer to child object.
+- Overridden method is called at runtime.
+- Achieved using inheritance + overriding.
+
+One-Line Interview Answer:
+
+- Polymorphism allows one method to perform
+  different actions based on object type.
+
+   final Keyword in Java:
+
+- final is used to restrict modification.
+- Used with variable, method, and class.
+
+final Variable:
+
+- Value cannot be changed.
+- Makes variable constant.
+
+Example:
+final double pie = 3.14;
+
+final Method:
+
+- Method cannot be overridden.
+- Used to prevent method modification.
+
+Example:
+final void show()
+
+final Class:
+
+- Class cannot be inherited.
+- Used to stop inheritance.
+
+Example:
+final class Calc
+
+Why use final?
+
+- Provides security.
+- Prevents unwanted modification.
+- Improves code safety.
+
+Important Interview Points:
+
+- final variable → constant
+- final method → no overriding
+- final class → no inheritance
+- final keyword improves security
+
+One-Line Interview Answer:
+
+- final keyword is used to restrict inheritance,
+  overriding, and value modification.
