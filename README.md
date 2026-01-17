@@ -356,3 +356,146 @@ Inheritance = code reuse.
 static members belong to class.
 
 Constructor initializes object.
+
+    Multilevel Inheritance:
+
+- When a class inherits another class,
+  and that class is already inherited from another class.
+- Forms a chain of inheritance.
+vbnet
+Copy code
+Example Structure:
+
+Class A  →  Class B  →  Class C
+less
+Copy code
+In this example:
+
+- Class A has concat() method
+- Class B extends A and adds concatHello()
+- MultilevelInheritance extends B
+
+So:
+- MultilevelInheritance IS-A B
+- B IS-A A
+r
+Copy code
+Method Access:
+
+- Child class can access all public methods of parent.
+- Object of child can call methods of all parent classes.
+kotlin
+Copy code
+Important Points:
+
+- extends keyword is used for inheritance
+- Code reusability is main benefit
+- Parent class methods are reused
+powershell
+Copy code
+Interview Points:
+
+- Java supports multilevel inheritance
+- Java does NOT support multiple inheritance using classes
+- Multiple inheritance is supported using interfaces
+
+One-Line Interview Answer:
+
+- Multilevel inheritance is when a class is derived from a class which is already derived from another class.
+
+Multiple Inheritance in Java:
+
+- Multiple inheritance means a class inherits from more than one class.
+- One child class having multiple parent classes.
+
+Status in Java:
+
+- Java does NOT support multiple inheritance using classes.
+- Java supports multiple inheritance using interfaces.
+
+Why Java does NOT support multiple inheritance with classes?
+
+- To avoid ambiguity problem.
+- Known as Diamond Problem.
+- JVM gets confused which parent method to call.
+
+Diamond Problem Example:
+
+class A {
+    void show() { }
+}
+
+class B extends A { }
+class C extends A { }
+
+// Not allowed
+class D extends B, C { }  ❌
+
+How Java solves this problem?
+
+- Java uses interfaces.
+- Interfaces contain method declarations.
+- Implementation is done in child class.
+
+Multiple Inheritance using Interface:
+
+interface A {
+    void show();
+}
+
+interface B {
+    void display();
+}
+
+class C implements A, B {
+    public void show() { }
+    public void display() { }
+}
+
+Important Interview Points:
+
+- Java does not support multiple inheritance with classes.
+- Java supports multiple inheritance with interfaces.
+- Diamond problem is main reason.
+- implements keyword is used for interfaces.
+
+One-Line Interview Answer:
+
+- Java supports multiple inheritance using interfaces, not classes, to avoid ambiguity.
+
+    Method Overriding:
+
+- When child class provides its own implementation
+  of parent class method.
+- Method name and parameters must be same.
+- Happens between parent and child class.
+
+Rules of Method Overriding:
+
+- Method name must be same.
+- Parameter list must be same.
+- Return type must be same or compatible.
+- Access level cannot be reduced.
+- Method must not be static.
+
+Runtime Polymorphism:
+
+- Method overriding is runtime polymorphism.
+- Method call depends on object type.
+
+Example in Code:
+
+- Class A has add() method.
+- Class B overrides add() method.
+- Child version is called at runtime.
+
+Important Points:
+
+- Overriding happens in inheritance.
+- Parent method is replaced by child method.
+- @Override annotation helps avoid mistakes.
+
+One-Line Interview Answer:
+
+- Method overriding is when a child class provides
+  a specific implementation of a parent class method.
