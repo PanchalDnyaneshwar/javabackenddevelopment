@@ -599,3 +599,109 @@ One-Line Interview Answer:
 
 - final keyword is used to restrict inheritance,
   overriding, and value modification.
+
+
+ Object Class in Java:
+
+- Object class is the parent class of all classes.
+- Every class in Java implicitly extends Object class.
+
+Common Methods of Object Class:
+
+- toString()
+- equals()
+- hashCode()
+- getClass()
+
+toString():
+
+- Converts object into string format.
+- Called automatically when object is printed.
+- Default output is className@hashCode.
+- We override it for readable output.
+
+equals():
+
+- Used to compare two objects.
+- Default equals() compares reference.
+- We override equals() to compare content.
+
+hashCode():
+
+- Returns integer hash value of object.
+- Used in hashing-based collections.
+- If equals() is overridden, hashCode() must also be overridden.
+
+Why override equals() and hashCode()?
+
+- To compare object data, not memory address.
+- Required for HashMap, HashSet, etc.
+
+Important Interview Points:
+
+- Object is the superclass of all classes.
+- equals() compares reference by default.
+- toString() gives object representation.
+- equals() and hashCode() must follow contract.
+
+One-Line Interview Answer:
+
+- Object class is the root class of Java from which all classes are inherited.
+
+
+    Upcasting:
+
+- Converting child object to parent reference.
+- Happens automatically.
+- Safe casting.
+- Parent reference points to child object.
+
+Example:
+A obj = new B();
+
+What we can access in Upcasting?
+
+- Only parent class methods.
+- Child-specific methods are not accessible.
+
+Why Upcasting is used?
+
+- Used for runtime polymorphism.
+- Achieves loose coupling.
+- Helps in method overriding.
+
+
+Downcasting:
+
+- Converting parent reference to child reference.
+- Must be done explicitly.
+- Not always safe.
+- Requires type casting.
+
+Example:
+B obj1 = (B) obj;
+
+When Downcasting is safe?
+
+- When parent reference actually points to child object.
+- Otherwise ClassCastException occurs.
+
+Use Case:
+
+- Used when we need child-specific methods.
+- Common in collections and frameworks.
+
+Important Interview Points:
+
+- Upcasting is implicit.
+- Downcasting is explicit.
+- Upcasting supports polymorphism.
+- Wrong downcasting causes runtime error.
+
+One-Line Interview Answer:
+
+- Upcasting converts child object to parent reference,
+  while downcasting converts parent reference to child object.
+
+
+  
