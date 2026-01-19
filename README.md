@@ -855,4 +855,269 @@ One-Line Interview Answer:
   it is called when child class object is created
   to initialize parent part of the object.
 
-  
+   Inner Class in Java:
+
+- A class defined inside another class.
+- Inner class can access outer class variables.
+
+Why Inner Class?
+
+- Used for logical grouping.
+- Improves encapsulation.
+- Used when class is tightly coupled with another class.
+
+How to Create Inner Class Object?
+
+- First create outer class object.
+- Then create inner class object using outer object.
+
+Syntax:
+OuterClass.InnerClass obj = outerObj.new InnerClass();
+
+Example:
+
+A a = new A();
+A.B b = a.new B();
+
+Access Rule:
+
+- Inner class can access all members of outer class.
+- Even private variables can be accessed.
+
+Types of Inner Classes:
+
+- Member Inner Class
+- Static Nested Class
+- Local Inner Class
+- Anonymous Inner Class
+
+Important Interview Points:
+
+- Inner class depends on outer class object.
+- Cannot create inner class object directly.
+- Inner class increases code readability.
+
+One-Line Interview Answer:
+
+- Inner class is a class defined inside another class
+  and it can access outer class members.
+
+   Enum in Java:
+
+- Enum is a special type used to define constants.
+- Enum values are fixed.
+- Enum improves code readability.
+
+Why Enum is Needed?
+
+- To avoid using magic numbers or strings.
+- To make code type-safe.
+- To represent fixed set of values.
+
+Enum Benefits:
+
+- Prevents invalid values.
+- Improves maintainability.
+- Easy to understand.
+
+Important Interview Points:
+
+- Enum is implicitly final.
+- Enum extends java.lang.Enum.
+- Cannot create enum object using new.
+
+Enum Properties:
+
+- Enum constants are public static final by default.
+- Enum can be used in switch statements.
+- Enum can have methods and variables.
+
+One-Line Interview Answer:
+
+- Enum is used to represent a fixed set of constants in Java.
+
+    Serialization in Java:
+
+- Serialization means converting object into byte stream.
+- Used to save object state into file or send over network.
+
+Deserialization in Java:
+
+- Deserialization means converting byte stream back into object.
+- Used to restore object state.
+
+Why Serialization is used?
+
+- To store object in file.
+- To send object over network.
+- Used in distributed systems.
+
+Real Life Example:
+
+- Saving user session.
+- Saving game state.
+- Transferring object between server and client.
+
+Serializable Interface:
+
+- Marker interface.
+- No methods.
+- Used to tell JVM class is serializable.
+
+Example:
+class Student implements Serializable
+
+Interface in Java:
+
+- Interface is a blueprint of class.
+- Contains abstract methods.
+- Used to achieve abstraction.
+
+Types of Interfaces:
+
+1) Normal Interface:
+- More than one abstract method.
+
+2) Functional Interface:
+- Only one abstract method.
+- Also called SAM (Single Abstract Method).
+- Used in Lambda expressions.
+
+Example:
+@FunctionalInterface
+interface A {
+    void show();
+}
+
+3) Marker Interface:
+
+- Interface with no methods.
+- Used to mark a class.
+- Example: Serializable, Cloneable
+
+Why Functional Interface?
+
+- Enables Lambda expressions.
+- Reduces boilerplate code.
+- Improves readability.
+
+Important Interview Points:
+
+- Serialization converts object to byte stream.
+- Deserialization restores object.
+- Serializable is marker interface.
+- Functional interface has only one abstract method.
+- Lambda works only with functional interface.
+
+One-Line Interview Answers:
+
+- Serialization is the process of converting object into byte stream.
+- Functional interface contains exactly one abstract method.
+- Marker interface provides metadata to JVM.
+
+      Java 8 Features:
+
+- Lambda Expressions
+- Functional Interface
+- Default methods
+- Stream API
+- Optional class
+- Method Reference
+- Date and Time API
+
+Functional Interface:
+
+- Interface with only one abstract method.
+- Also called SAM (Single Abstract Method).
+- Used with Lambda expressions.
+
+Example:
+@FunctionalInterface
+interface A {
+    int add(int a, int b);
+}
+
+Lambda Expression:
+
+- Short form of anonymous class.
+- Introduced in Java 8.
+- Used to implement functional interface.
+Syntax of Lambda:
+
+(parameters) -> expression
+
+Example:
+(i, j) -> i + j
+
+Important Interview Points:
+
+- Lambda works only with functional interface.
+- @FunctionalInterface is optional but recommended.
+- Lambda provides implementation at runtime.
+
+One-Line Interview Answer:
+
+- Lambda expression is a concise way to implement
+  functional interfaces introduced in Java 8.
+
+
+    Exception in Java:
+
+- Exception is an unwanted event.
+- Occurs during program execution.
+- Disrupts normal flow of program.
+
+What is Error?
+
+- Error is a serious problem.
+- Cannot be handled by program.
+- Example: OutOfMemoryError.
+
+Types of Errors:
+
+1) Compile-Time Error:
+- Occurs during compilation.
+- Syntax mistakes.
+- Detected by compiler.
+
+Example:
+System.out.Println("Hi");
+
+2) Run-Time Error:
+- Occurs while program is running.
+- Also called exception.
+- Detected by JVM.
+
+Example:
+5 / 0
+
+3) Logical Error:
+- Program runs but gives wrong output.
+- Due to wrong logic.
+- Not detected by compiler or JVM.
+
+Exception Handling:
+
+- Used to handle runtime errors.
+- Prevents program from crashing.
+
+try block:
+- Code that may cause exception.
+
+catch block:
+- Handles exception.
+
+finally block:
+- Executes always (optional).
+
+Important Interview Points:
+
+- Exception occurs at runtime.
+- Errors are not recoverable.
+- try-catch handles exceptions.
+- JVM throws exception object.
+
+One-Line Interview Answer:
+
+- Exception is a runtime problem that
+  interrupts normal program execution.
