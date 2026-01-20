@@ -1183,3 +1183,158 @@ One-Line Interview Answer:
 - finally block is used to execute cleanup code
   like closing resources regardless of exception.
 
+    Thread in Java:
+
+- Thread is a lightweight process.
+- Used to perform multiple tasks at same time.
+- Helps in parallel execution.
+
+Why Thread is Needed?
+
+- To improve performance.
+- To utilize CPU cores efficiently.
+- To run tasks simultaneously.
+
+Thread Flow (System Level):
+
+H/W → OS → JVM → Thread Scheduler → CPU Cores
+
+Thread Scheduler:
+
+- Part of JVM.
+- Decides which thread runs.
+- Uses time-slicing and priority.
+
+How Thread Works:
+
+- Multiple threads share CPU time.
+- Scheduler switches between threads.
+- Looks like parallel execution.
+
+Creating Thread in Java (2 Ways):
+
+1) Extending Thread class
+2) Implementing Runnable interface
+
+start() vs run():
+
+- start() creates new thread.
+- run() contains thread logic.
+- Never call run() directly.
+
+sleep():
+
+- Pauses current thread.
+- Time is in milliseconds.
+- Throws InterruptedException.
+
+Multicore System:
+
+- Modern systems have multiple cores.
+- Threads can run truly parallel.
+
+Important Interview Points:
+
+- Thread is smaller than process.
+- JVM handles thread scheduling.
+- start() internally calls run().
+- sleep() pauses current thread.
+
+One-Line Interview Answer:
+
+- Thread is a lightweight sub-process
+  used to achieve multitasking in Java.
+
+    Runnable Interface in Java:
+
+- Runnable is a functional interface.
+- Contains only one method: run().
+- Used to define thread task.
+
+Why Runnable Interface is Needed?
+
+- Java does not support multiple inheritance.
+- If we extend Thread, we cannot extend another class.
+- Runnable solves this problem.
+
+Difference: Thread vs Runnable
+
+Thread:
+- Extends Thread class.
+- Less flexible.
+- Not recommended.
+
+Runnable:
+- Implements Runnable interface.
+- More flexible.
+- Best practice.
+
+Lambda with Runnable:
+
+- Runnable is functional interface.
+- Lambda expression can be used.
+- Reduces code length.
+
+How Runnable Works:
+
+- Runnable defines task.
+- Thread executes task.
+- Thread object is required to start execution.
+
+Why we use Thread class with Runnable?
+
+- Runnable cannot start thread.
+- Thread class starts thread using start().
+
+Benefits of Runnable:
+
+- Supports multiple inheritance.
+- Better design.
+- Separates task from thread.
+
+Important Interview Points:
+
+- Runnable is preferred over Thread.
+- Runnable supports Lambda.
+- Thread.sleep() pauses current thread.
+- start() creates new thread.
+
+One-Line Interview Answer:
+
+- Runnable interface is used to define thread task
+  and provides better flexibility than Thread class.
+
+    Mutation in Java:
+
+- Mutation means modifying shared data.
+- Happens when multiple threads access same variable.
+
+Problem with Mutation:
+
+- Multiple threads modify same data at same time.
+- Leads to inconsistent or wrong output.
+- This problem is called Race Condition.
+
+Thread Safety:
+
+- Thread-safe code ensures correct result.
+- Only one thread can access critical section at a time.
+
+synchronized Keyword:
+
+- Used to make method or block thread-safe.
+- Allows only one thread at a time.
+- Mutation causes race condition.
+- synchronized ensures thread safety
+
+Why synchronized is needed?
+
+- Prevents race condition.
+- Ensures data consistency.
+
+
+One-Line Interview Answer:
+
+- Mutation is modification of shared data by multiple threads
+  and synchronization is used to make it thread-safe.
+
