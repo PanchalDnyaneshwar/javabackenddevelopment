@@ -1594,3 +1594,95 @@ clear()
 
 - Collection Framework provides classes and interfaces
   to store, retrieve, and manipulate groups of objects.
+
+    Set in Java:
+
+- Set is an interface.
+- Does NOT allow duplicate elements.
+- Stores only unique values.
+
+Important Properties of Set:
+
+- No duplicate values allowed.
+- No index-based access.
+- Order is not guaranteed (HashSet).
+
+HashSet:
+
+- Implements Set interface.
+- Uses hashing technique.
+- Fast performance.
+- Does NOT maintain insertion order.
+
+Set vs List (Interview):
+
+- List → allows duplicates, maintains order
+- Set → no duplicates, order not guaranteed
+
+Types of Set:
+
+- HashSet → fastest, no order
+- LinkedHashSet → maintains insertion order
+- TreeSet → sorted order
+
+Use Cases of Set:
+
+- Unique IDs
+- Email addresses
+- Roll numbers
+
+Important Interview Points:
+
+- Set does not allow duplicates.
+- HashSet allows only one null value.
+- TreeSet does not allow null.
+
+One-Line Interview Answer:
+
+- Set is a collection that stores only unique elements.
+
+ TreeSet in Java:
+
+- TreeSet implements Set interface.
+- Stores elements in sorted order.
+- Does NOT allow duplicate values.
+
+Important Properties of TreeSet:
+
+- Sorted (ascending by default).
+- No duplicate elements.
+- Does NOT allow null values.
+
+TreeSet vs HashSet:
+
+- HashSet → fast, no order
+- TreeSet → sorted, slower than HashSet
+
+Iterator in Java:
+
+- Used to traverse collections.
+- Works with all Collection types.
+- Forward direction only.
+
+Iterator Methods:
+
+- hasNext() → checks next element
+- next() → returns next element
+- remove() → removes element
+
+Why Iterator is Used?
+
+- Safe traversal.
+- Avoids ConcurrentModificationException.
+- Works with Set, List, Queue.
+
+When to Use Iterator?
+
+- When you don’t need index.
+- When working with Set or TreeSet.
+
+Important Interview Points:
+
+- TreeSet stores unique sorted values.
+- TreeSet does not allow null.
+- Iterator supports forward traversal only.
