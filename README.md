@@ -1686,3 +1686,170 @@ Important Interview Points:
 - TreeSet stores unique sorted values.
 - TreeSet does not allow null.
 - Iterator supports forward traversal only.
+
+    Map in Java:
+
+- Map is an interface.
+- Stores data in key-value pairs.
+- Keys are unique.
+- Values can be duplicate.
+
+Why Map is Needed?
+
+- Fast data lookup.
+- Direct access using key.
+- Represents real-world relationships.
+
+Real Life Examples:
+
+- Student → Marks
+- Username → Password
+- EmployeeID → EmployeeData
+
+HashMap:
+
+- Implements Map interface.
+- No order maintained.
+- Allows one null key.
+- Allows multiple null values.
+- Fast performance.
+
+Important Map Methods:
+
+- put(key, value)
+- get(key)
+- remove(key)
+- containsKey(key)
+- containsValue(value)
+- keySet()
+- values()
+
+Important Behavior:
+
+- Duplicate key overrides old value.
+- Keys must be unique.
+
+Map vs Collection (Interview):
+
+- Collection stores only values.
+- Map stores key-value pairs.
+- Map is NOT part of Collection hierarchy.
+
+Types of Map:
+
+- HashMap → no order
+- LinkedHashMap → insertion order
+- TreeMap → sorted order
+- Hashtable → synchronized (legacy)
+
+Important Interview Points:
+
+- HashMap is not thread-safe.
+- TreeMap sorts keys.
+- Hashtable is synchronized.
+- Map does not allow duplicate keys.
+
+    Comparator in Java:
+
+- Comparator is an interface.
+- Used to define custom sorting logic.
+- Located in java.util package.
+
+Why Comparator is Needed?
+
+- Default sorting may not be enough.
+- Needed when we want custom order.
+- Used when class cannot be modified.
+
+Comparator vs Comparable:
+
+Comparable:
+- compareTo() method
+- Used for natural ordering
+- Class itself defines sorting
+
+Comparator:
+- compare() method
+- External sorting logic
+- Multiple sorting strategies possible
+
+Comparator Method:
+
+compare(o1, o2)
+
+- returns positive → swap
+- returns negative → no swap
+- returns zero → equal
+
+Collections.sort():
+
+- Used to sort List.
+- Can accept Comparator.
+
+Syntax:
+Collections.sort(list, comparator);
+
+Real-Life Use Cases:
+
+- Sort employees by salary
+- Sort students by marks
+- Sort products by price
+
+Important Interview Points:
+
+- Comparator is functional interface.
+- Used for custom sorting.
+- Allows multiple sorting logic.
+
+
+    Comparable in Java:
+
+- Comparable is an interface.
+- Used for natural sorting.
+- Sorting logic is inside the class.
+- Class compares itself.
+
+Comparable Method:
+
+compareTo(Object o)
+
+- returns positive → greater
+- returns negative → smaller
+- returns zero → equal
+
+Comparator in Java:
+
+- Comparator is an interface.
+- Used for custom sorting.
+- Sorting logic is outside the class.
+- Also called third-party sorting.
+
+Key Difference (Very Important):
+
+Comparable:
+- compareTo()
+- Inside the class
+- Only one sorting logic
+
+Comparator:
+- compare()
+- Outside the class
+- Multiple sorting logic possible
+
+When to Use Comparable?
+
+- When class has a natural order.
+- Example: age, roll number, id
+
+When to Use Comparator?
+
+- When multiple sorting logic is needed.
+- Example: marks, name, salary
+
+Interview One-Line Answer:
+
+- Comparable is used when a class compares itself,
+  Comparator is used when comparison logic is external.
+- Comparator is functional interface.
+- Comparator supports Lambda.
+- Collections.sort() supports both.
