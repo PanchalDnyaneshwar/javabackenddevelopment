@@ -30,8 +30,7 @@ public class ComparableDemo {
     public static void main(String[] args) {
 
         // Custom sorting (by marks)
-        Comparator<Student> marksComparator =
-                (s1, s2) -> Double.compare(s1.marks, s2.marks);
+        Comparator<Student> marksComparator = (s1, s2) -> Double.compare(s1.marks, s2.marks);
 
         List<Student> students = new ArrayList<>();
 
