@@ -1897,3 +1897,94 @@ Important Interview Points:
 - Streams can be sequential or parallel.
 - Stream API is used to process collections
   in a functional and declarative way.
+
+      Sealed Class in Java:
+
+- Introduced in Java 17.
+- Used to restrict inheritance.
+- Controls which classes can extend a class.
+
+Why Sealed Class is Needed?
+
+- To control class hierarchy.
+- To improve security.
+- To prevent misuse of inheritance.
+
+Rules of Sealed Class:
+
+- Child classes must be:
+  final - Cannot be extended further.
+  sealed - Again restricts its subclasses.
+  non-sealed - Can be extended further.
+
+Sealed Interface:
+
+- Same concept as sealed class.
+- Restricts which classes or interfaces can implement it.
+
+Real-Life Use Cases:
+
+- Payment systems
+- User roles (Admin, User, Guest)
+- Vehicle types
+- Notification types
+
+Sealed vs Abstract:
+
+- Abstract → allows unlimited inheritance
+- Sealed → restricted inheritance
+
+Important Interview Points:
+
+- Sealed classes give controlled inheritance.
+- Improves maintainability.
+- Works with pattern matching.
+- Requires permits keyword.
+
+One-Line Interview Answer:
+
+- Sealed classes restrict which classes
+  can extend or implement them in Java.
+
+    Record Class in Java:
+
+- Introduced in Java 16.
+- Used as Data Carrier class.
+- Automatically creates boilerplate code.
+
+What Problem Records Solve?
+
+- Too much boilerplate code.
+- Need for getters, constructor, equals, hashCode, toString.
+
+Record Automatically Provides:
+
+- Constructor
+- Getters (name(), salary())
+- equals()
+- hashCode()
+- toString()
+
+Why Record is Needed?
+
+- To represent immutable data.
+- To reduce code length.
+- To improve readability.
+
+Important Properties of Record:
+
+- Record is immutable.
+- All fields are private and final.
+- Cannot extend other classes.
+- Can implement interfaces.
+
+Real-Life Use Cases:
+
+- DTO (Data Transfer Object)
+- API request/response
+- Employee, Student, Product data
+
+One-Line Interview Answer:
+
+- Record class is used to create immutable
+  data carrier classes with less boilerplate code.
