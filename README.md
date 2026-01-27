@@ -1,10 +1,9 @@
-# 📘 Core Java Notes - Complete Reference Guide
+# 📘 Complete Core Java Notes
 
 <div align="center">
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Interview Ready](https://img.shields.io/badge/Interview-Ready-green?style=for-the-badge)
-![Beginner Friendly](https://img.shields.io/badge/Beginner-Friendly-blue?style=for-the-badge)
+
 
 **A comprehensive collection of Core Java concepts with simple explanations and interview-ready one-liners**
 
@@ -1898,9 +1897,8 @@ Contributions are welcome! Here's how you can help:
 
 For questions, suggestions, or feedback:
 
-- **GitHub Issues**: [Create an issue](https://github.com/yourusername/core-java-notes/issues)
-- **Email**: your.email@example.com
-- **LinkedIn**: [Your Profile](https://linkedin.com/in/yourprofile)
+- **Email**: panchaldnyaneshwar.m@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/dnyanupanchal77
 
 ---
 
@@ -1914,16 +1912,9 @@ If you found this helpful:
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 🙏 Acknowledgments
 
 - Java Documentation
-- Community contributions
 - Interview experiences
 - Open-source resources
 
@@ -1931,10 +1922,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**Made with ❤️ for Java Learners**
-
-[![GitHub followers](https://img.shields.io/github/followers/yourusername?style=social)](https://github.com/yourusername)
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/core-java-notes?style=social)](https://github.com/yourusername/core-java-notes)
+**Made with ❤️ for Java**
 
 **Happy Learning! 🚀**
 
