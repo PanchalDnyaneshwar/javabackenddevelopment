@@ -1,444 +1,921 @@
-📘 Core Java Notes (Simple & Interview Ready)
+# 📘 Core Java Notes - Complete Reference Guide
+
+<div align="center">
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Interview Ready](https://img.shields.io/badge/Interview-Ready-green?style=for-the-badge)
+![Beginner Friendly](https://img.shields.io/badge/Beginner-Friendly-blue?style=for-the-badge)
 
-🔹 Java Basics
+**A comprehensive collection of Core Java concepts with simple explanations and interview-ready one-liners**
 
-Java is an object-oriented programming language.
+[Quick Start](#quick-start) • [Topics Covered](#-topics-covered) • [How to Use](#-how-to-use) • [Contributing](#-contributing)
 
-Program execution starts from the main() method.
+</div>
+
+---
+
+## 📑 Table of Contents
+
+- [About](#-about)
+- [Topics Covered](#-topics-covered)
+- [Quick Start](#quick-start)
+- [Core Concepts](#-core-concepts)
+  - [Java Basics](#1-java-basics)
+  - [Data Types & Operators](#2-data-types--operators)
+  - [Control Flow](#3-control-flow)
+  - [Arrays & Strings](#4-arrays--strings)
+  - [OOP Concepts](#5-oop-concepts)
+  - [Advanced OOP](#6-advanced-oop)
+  - [Exception Handling](#7-exception-handling)
+  - [Collections Framework](#8-collections-framework)
+  - [Java 8+ Features](#9-java-8-features)
+  - [Multithreading](#10-multithreading)
+  - [Modern Java](#11-modern-java-features)
+- [Interview One-Liners](#-interview-one-liners)
+- [How to Use](#-how-to-use)
+- [Contributing](#-contributing)
+- [License](#-license)
 
-One .java file can have only one public class.
+---
 
-File name must match the public class name.
+## 🎯 About
 
-🔹 Data Types
+This repository contains **simplified and interview-ready notes** on Core Java concepts. Whether you're a beginner learning Java or preparing for technical interviews, this guide covers everything from basics to advanced topics with:
 
-Primitive Data Types
+✅ **Simple explanations** - Easy to understand  
+✅ **Real-life examples** - Practical use cases  
+✅ **Interview one-liners** - Quick revision  
+✅ **Code snippets** - Implementation examples  
+✅ **Best practices** - Industry standards  
+
+---
 
-int → whole numbers
+## 🗂️ Topics Covered
 
-float → decimal numbers (f required)
+<details open>
+<summary><b>Fundamentals</b></summary>
 
-double → decimal numbers (default)
+- Java Basics & Program Structure
+- Data Types (Primitive & Non-Primitive)
+- Operators (Arithmetic, Relational, Logical)
+- Control Flow (if-else, switch, loops)
+- Arrays (1D, 2D, Jagged, Object Arrays)
 
-char → single character
+</details>
 
-boolean → true / false
+<details open>
+<summary><b>Object-Oriented Programming</b></summary>
 
-Non-Primitive Data Types
+- Classes & Objects
+- Encapsulation & Data Hiding
+- Constructors & this Keyword
+- Inheritance & super Keyword
+- Method Overloading & Overriding
+- Polymorphism (Compile-time & Runtime)
+- Abstraction (Abstract Classes & Interfaces)
+- final, static Keywords
+- Inner Classes & Enums
+
+</details>
 
-String
+<details open>
+<summary><b>Advanced Concepts</b></summary>
 
-Array
-
-Class
-
-Object
-
-🔹 Operators
-
-Arithmetic Operators
-
-+ Addition
-
-- Subtraction
-
-* Multiplication
-
-/ Division (integer division removes decimal)
-
-% Modulus (remainder)
-
-Increment / Decrement
-
-++ increase by 1
-
--- decrease by 1
-
-Assignment Operators
-
-=, +=, -=
-
-🔹 Conditional Statements
-
-if-else
-
-Used to execute code based on condition.
-
-switch
-
-Used when checking a variable against fixed values.
-
-Cleaner than long if-else ladder.
-
-break stops execution of next case.
-
-🔹 Loops (Iteration)
-
-Types of Loops
-
-for → when number of iterations is known
-
-while → when end condition is not known
-
-do-while → runs at least once
-
-Nested loop → loop inside another loop
-
-🔹 Arrays
-
-Array
-
-Used to store multiple values of same data type.
-
-Size is fixed.
-
-Index starts from 0.
-
-Types
-
-1D Array
-
-2D Array
-
-Jagged Array (rows with different sizes)
-
-🔹 for-each Loop
-
-Used to traverse arrays easily.
-
-No index handling.
-
-Read-only loop.
-
-for(Type var : array)
-
-🔹 Object Array
-
-Array that stores objects instead of primitive values.
-
-Each element stores reference of an object.
-
-Default value is null.
-
-Use Case
-
-Students
-
-Employees
-
-Products
-
-🔹 String in Java
-
-String is a class, not primitive.
-
-Used to store text.
-
-Located in java.lang package.
-
-String Immutability
-
-String cannot be changed.
-
-Any modification creates a new object.
-
-String Creation
-
-String literal → String Constant Pool (SCP)
-
-new String() → Heap memory
-
-String Comparison
-
-== → compares reference
-
-equals() → compares value
-
-String Constant Pool (SCP)
-
-Special memory area inside heap.
-
-Stores only one copy of same string value.
-
-Improves memory efficiency.
-
-🔹 Mutable Strings
-
-StringBuffer
-
-Mutable
-
-Thread safe
-
-Slower
-
-Synchronized
-
-StringBuilder
-
-Mutable
-
-Not thread safe
-
-Faster
-
-Not synchronized
-
-Capacity Rule
-
+- String Immutability & String Pool
+- StringBuilder & StringBuffer
+- Wrapper Classes & Autoboxing
+- Object Class Methods
+- Upcasting & Downcasting
+- Exception Handling (try-catch-finally)
+- Serialization & Deserialization
+
+</details>
+
+<details open>
+<summary><b>Collections Framework</b></summary>
+
+- Collection Interface & Hierarchy
+- List (ArrayList, LinkedList, Vector)
+- Set (HashSet, LinkedHashSet, TreeSet)
+- Queue & Deque
+- Map (HashMap, LinkedHashMap, TreeMap)
+- Iterator & for-each loop
+- Comparable & Comparator
+
+</details>
+
+<details open>
+<summary><b>Modern Java (Java 8+)</b></summary>
+
+- Lambda Expressions
+- Functional Interfaces
+- Stream API
+- Optional Class
+- Method References
+- Default & Static Methods in Interfaces
+- Sealed Classes (Java 17)
+- Record Classes (Java 16)
+
+</details>
+
+<details open>
+<summary><b>Multithreading</b></summary>
+
+- Thread Basics & Lifecycle
+- Creating Threads (Thread class & Runnable)
+- Thread States (NEW, RUNNABLE, RUNNING, etc.)
+- Synchronization & Thread Safety
+- Race Conditions & Mutation
+- sleep(), wait(), join() Methods
+
+</details>
+
+---
+
+## Quick Start
+
+### Prerequisites
+- Java Development Kit (JDK) 8 or higher
+- Basic understanding of programming concepts
+- Any IDE (IntelliJ IDEA, Eclipse, VS Code) or text editor
+
+### Clone the Repository
+```bash
+git clone https://github.com/yourusername/core-java-notes.git
+cd core-java-notes
+```
+
+### Start Learning
+Navigate through the notes section by section, starting from basics to advanced topics.
+
+---
+
+## 📚 Core Concepts
+
+### 1. Java Basics
+
+#### What is Java?
+- **Object-oriented programming language**
+- Platform-independent (Write Once, Run Anywhere)
+- Strongly typed language
+- Automatic memory management (Garbage Collection)
+
+#### Program Structure
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+#### Key Rules
+- Program execution starts from `main()` method
+- One `.java` file can have **only one public class**
+- File name must match the public class name
+- Case-sensitive language
+
+**💡 Interview One-Liner:** *Java is an object-oriented, platform-independent programming language where execution starts from the main() method.*
+
+---
+
+### 2. Data Types & Operators
+
+#### Primitive Data Types
+| Type | Size | Example | Default Value |
+|------|------|---------|---------------|
+| `byte` | 1 byte | `byte b = 127;` | 0 |
+| `short` | 2 bytes | `short s = 32767;` | 0 |
+| `int` | 4 bytes | `int i = 100;` | 0 |
+| `long` | 8 bytes | `long l = 100000L;` | 0L |
+| `float` | 4 bytes | `float f = 3.14f;` | 0.0f |
+| `double` | 8 bytes | `double d = 3.14159;` | 0.0d |
+| `char` | 2 bytes | `char c = 'A';` | '\u0000' |
+| `boolean` | 1 bit | `boolean b = true;` | false |
+
+#### Non-Primitive Data Types
+- **String** - Sequence of characters
+- **Array** - Collection of similar data types
+- **Class** - Blueprint for objects
+- **Object** - Instance of a class
+
+#### Operators
+
+**Arithmetic Operators**
+```java
++   // Addition
+-   // Subtraction
+*   // Multiplication
+/   // Division
+%   // Modulus (remainder)
+++  // Increment
+--  // Decrement
+```
+
+**Assignment Operators**
+```java
+=   // Assign
++=  // Add and assign
+-=  // Subtract and assign
+*=  // Multiply and assign
+/=  // Divide and assign
+```
+
+**💡 Interview One-Liner:** *Java has 8 primitive data types and supports arithmetic, relational, logical, and assignment operators.*
+
+---
+
+### 3. Control Flow
+
+#### if-else Statement
+```java
+if (condition) {
+    // code if condition is true
+} else {
+    // code if condition is false
+}
+```
+
+#### switch Statement
+```java
+switch (variable) {
+    case value1:
+        // code
+        break;
+    case value2:
+        // code
+        break;
+    default:
+        // default code
+}
+```
+
+**When to use:**
+- Use `if-else` for complex conditions
+- Use `switch` when checking a variable against fixed values
+- `break` stops execution of next case
+
+#### Loops
+
+**for loop** - When iterations are known
+```java
+for (int i = 0; i < 10; i++) {
+    System.out.println(i);
+}
+```
+
+**while loop** - When end condition is unknown
+```java
+while (condition) {
+    // code
+}
+```
+
+**do-while loop** - Runs at least once
+```java
+do {
+    // code
+} while (condition);
+```
+
+**for-each loop** - For traversing arrays/collections
+```java
+for (int num : array) {
+    System.out.println(num);
+}
+```
+
+**💡 Interview One-Liner:** *Java supports if-else, switch for decision-making and for, while, do-while loops for iteration.*
+
+---
+
+### 4. Arrays & Strings
+
+#### Arrays
+
+**What is an Array?**
+- Used to store multiple values of the **same data type**
+- **Fixed size** (cannot be changed)
+- Index starts from **0**
+
+**Types of Arrays:**
+
+**1D Array**
+```java
+int[] arr = new int[5];
+int[] numbers = {1, 2, 3, 4, 5};
+```
+
+**2D Array**
+```java
+int[][] matrix = new int[3][3];
+int[][] grid = {{1, 2}, {3, 4}, {5, 6}};
+```
+
+**Jagged Array** - Rows with different sizes
+```java
+int[][] jagged = new int[3][];
+jagged[0] = new int[2];
+jagged[1] = new int[4];
+jagged[2] = new int[3];
+```
+
+**Object Array**
+```java
+Student[] students = new Student[5];
+students[0] = new Student("Alice", 85);
+```
+
+**💡 Interview One-Liner:** *Arrays store multiple values of the same type with fixed size, and index starts from 0.*
+
+---
+
+#### Strings
+
+**What is String?**
+- String is a **class**, not primitive
+- Used to store text
+- Located in `java.lang` package
+- **Immutable** (cannot be changed)
+
+**String Immutability**
+```java
+String s1 = "Hello";
+s1 = s1 + " World";  // Creates new object
+```
+- Any modification creates a **new object**
+- Original object remains unchanged
+
+**String Creation**
+
+**String Literal** (Stored in String Constant Pool)
+```java
+String s1 = "Hello";
+String s2 = "Hello";  // Points to same object
+```
+
+**new String()** (Stored in Heap)
+```java
+String s3 = new String("Hello");  // New object in heap
+```
+
+**String Comparison**
+```java
+// == compares reference (memory address)
+s1 == s2;  // true (same reference in SCP)
+
+// equals() compares value (content)
+s1.equals(s3);  // true (same content)
+```
+
+**String Constant Pool (SCP)**
+- Special memory area inside heap
+- Stores only **one copy** of same string value
+- Improves memory efficiency
+
+**💡 Interview One-Liner:** *String is immutable, stored in String Constant Pool for memory efficiency, and compared using equals() for content.*
+
+---
+
+#### Mutable Strings
+
+| Feature | StringBuffer | StringBuilder |
+|---------|-------------|---------------|
+| **Mutability** | Mutable | Mutable |
+| **Thread Safety** | Thread-safe (Synchronized) | Not thread-safe |
+| **Performance** | Slower | Faster |
+| **Use Case** | Multi-threaded environment | Single-threaded environment |
+
+**Capacity Rule**
+```
 Default capacity = 16
-
-New capacity = (old * 2) + 2
-
-🔹 OOP Concepts
-Object-Oriented Programming
-
-Everything is treated as object.
-
-Object has:
-
-Properties (variables)
-
-Behaviour (methods)
-
-🔹 Encapsulation
-
-Wrapping data and methods together.
-
-Achieved using:
-
-private variables
-
-public getters/setters
-
-Benefits
-
-Data security
-
-Data hiding
-
-Controlled access
-
-🔹 Constructor
-
-Special method used to initialize object.
-
-Same name as class.
-
-No return type.
-
-Runs automatically when object is created.
-
-Types
-
-Default constructor
-
-Parameterized constructor
-
-Important
-
-Constructor cannot be static.
-
-Constructor cannot be inherited.
-
-Constructor runs once per object.
-
-🔹 this Keyword
-
-Refers to current object.
-
-Used to differentiate instance and local variables.
-
-Used to call current class constructor or methods.
-
-🔹 super Keyword
-
-Refers to parent class object.
-
-Used to:
-
-Access parent variables
-
-Call parent methods
-
-Call parent constructor
-
-🔹 Inheritance
-
-Acquiring properties and methods of another class.
-
-Represents IS-A relationship.
-
-Uses extends keyword.
-
-Types
-
-Single-level inheritance
-
-Multi-level inheritance
-
-Important
-
-Java does not support multiple inheritance using classes.
-
-Supported using interfaces.
-
-🔹 Method Overloading
-
-Same method name.
-
-Different parameter list.
-
-Happens in same class.
-
-Compile-time polymorphism.
-
-🔹 static Keyword
-
-Static Variable
-
-Belongs to class.
-
-Shared by all objects.
-
-Only one copy exists.
-
-Static Method
-
-Belongs to class.
-
-Can be called without object.
-
-Cannot access non-static variables directly.
-
-Static Block
-
-Runs once when class is loaded.
-
-Used to initialize static variables.
-
-Why main method is static
-
-JVM can call it without creating object.
-
-🔹 Memory Concept (Very Important)
-
-Heap → Objects, instance variables
-
-Stack → Local variables, reference variables
-
-Method Area → Static variables, class metadata
-
-String Constant Pool → String literals
-
-🔹 Important Interview Rules
-
-One public class per file
-
-File name = public class name
-
-Use equals() for string comparison
-
-Constructors are not inherited
-
-Static members belong to class
-
-Child object can access parent methods
-
-🔹 One-Line Interview Answers
-
-String is immutable.
-
-Encapsulation = data hiding.
-
-Inheritance = code reuse.
-
-static members belong to class.
-
-Constructor initializes object.
-
-    Multilevel Inheritance:
-
-- When a class inherits another class,
-  and that class is already inherited from another class.
-- Forms a chain of inheritance.
-vbnet
-Copy code
-Example Structure:
-
-Class A  →  Class B  →  Class C
-less
-Copy code
-In this example:
-
-- Class A has concat() method
-- Class B extends A and adds concatHello()
-- MultilevelInheritance extends B
-
-So:
-- MultilevelInheritance IS-A B
-- B IS-A A
-r
-Copy code
-Method Access:
-
-- Child class can access all public methods of parent.
-- Object of child can call methods of all parent classes.
-kotlin
-Copy code
-Important Points:
-
-- extends keyword is used for inheritance
-- Code reusability is main benefit
-- Parent class methods are reused
-powershell
-Copy code
-Interview Points:
-
-- Java supports multilevel inheritance
-- Java does NOT support multiple inheritance using classes
-- Multiple inheritance is supported using interfaces
-
-One-Line Interview Answer:
-
-- Multilevel inheritance is when a class is derived from a class which is already derived from another class.
-
-Multiple Inheritance in Java:
-
-- Multiple inheritance means a class inherits from more than one class.
-- One child class having multiple parent classes.
-
-Status in Java:
-
-- Java does NOT support multiple inheritance using classes.
-- Java supports multiple inheritance using interfaces.
-
-Why Java does NOT support multiple inheritance with classes?
-
-- To avoid ambiguity problem.
-- Known as Diamond Problem.
-- JVM gets confused which parent method to call.
-
-Diamond Problem Example:
-
-class A {
-    void show() { }
+New capacity = (old capacity * 2) + 2
+```
+
+```java
+StringBuilder sb = new StringBuilder("Hello");
+sb.append(" World");  // Modifies same object
+System.out.println(sb);  // "Hello World"
+```
+
+**💡 Interview One-Liner:** *StringBuffer is thread-safe but slower, while StringBuilder is faster but not thread-safe.*
+
+---
+
+### 5. OOP Concepts
+
+#### Object-Oriented Programming
+
+**Core Principles:**
+- **Encapsulation** - Data hiding
+- **Inheritance** - Code reuse
+- **Polymorphism** - Many forms
+- **Abstraction** - Hiding complexity
+
+**Object & Class**
+```java
+// Class - Blueprint
+class Student {
+    String name;  // Property
+    int marks;
+    
+    void study() {  // Behavior
+        System.out.println("Studying...");
+    }
 }
 
-class B extends A { }
-class C extends A { }
+// Object - Instance
+Student s1 = new Student();
+s1.name = "Alice";
+s1.study();
+```
 
-// Not allowed
-class D extends B, C { }  ❌
+**💡 Interview One-Liner:** *OOP treats everything as objects with properties and behaviors, following principles of encapsulation, inheritance, polymorphism, and abstraction.*
 
-How Java solves this problem?
+---
 
-- Java uses interfaces.
-- Interfaces contain method declarations.
-- Implementation is done in child class.
+#### Encapsulation
 
-Multiple Inheritance using Interface:
+**What is Encapsulation?**
+- Wrapping data and methods together
+- Data hiding using access modifiers
 
+**Implementation:**
+```java
+class Student {
+    private String name;  // Private variable
+    private int marks;
+    
+    // Public getter
+    public String getName() {
+        return name;
+    }
+    
+    // Public setter
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+```
+
+**Benefits:**
+- Data security
+- Controlled access
+- Flexibility to change implementation
+
+**💡 Interview One-Liner:** *Encapsulation is data hiding achieved through private variables and public getters/setters.*
+
+---
+
+#### Constructors
+
+**What is Constructor?**
+- Special method to initialize objects
+- Same name as class
+- No return type
+- Called automatically when object is created
+
+**Types:**
+
+**Default Constructor**
+```java
+class Student {
+    Student() {
+        System.out.println("Object created");
+    }
+}
+```
+
+**Parameterized Constructor**
+```java
+class Student {
+    String name;
+    int marks;
+    
+    Student(String name, int marks) {
+        this.name = name;
+        this.marks = marks;
+    }
+}
+```
+
+**Important Rules:**
+- Constructor cannot be `static`
+- Constructor cannot be inherited
+- Constructor runs once per object
+
+**💡 Interview One-Liner:** *Constructor is a special method with no return type that initializes object when created.*
+
+---
+
+#### this Keyword
+
+**What is this?**
+- Refers to **current object**
+- Used to differentiate between instance and local variables
+
+**Usage:**
+```java
+class Student {
+    String name;
+    
+    Student(String name) {
+        this.name = name;  // this.name is instance variable
+    }
+    
+    void display() {
+        System.out.println(this.name);
+    }
+    
+    Student getStudent() {
+        return this;  // Returns current object
+    }
+}
+```
+
+**💡 Interview One-Liner:** *this keyword refers to the current object and is used to access instance variables and methods.*
+
+---
+
+#### Inheritance
+
+**What is Inheritance?**
+- Acquiring properties and methods of another class
+- Represents **IS-A** relationship
+- Uses `extends` keyword
+
+**Types:**
+
+**Single-level Inheritance**
+```java
+class Animal {
+    void eat() {
+        System.out.println("Eating...");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Barking...");
+    }
+}
+```
+
+**Multi-level Inheritance**
+```java
+class A {
+    void methodA() { }
+}
+
+class B extends A {
+    void methodB() { }
+}
+
+class C extends B {
+    void methodC() { }
+}
+// C → B → A (Chain of inheritance)
+```
+
+**Important:**
+- Java does **NOT** support multiple inheritance using classes
+- Multiple inheritance is supported using **interfaces**
+
+**💡 Interview One-Liner:** *Inheritance is acquiring properties of parent class for code reuse; Java doesn't support multiple inheritance with classes to avoid diamond problem.*
+
+---
+
+#### super Keyword
+
+**What is super?**
+- Refers to **parent class object**
+- Used to access parent class members
+
+**Usage:**
+```java
+class Parent {
+    int x = 10;
+    
+    Parent() {
+        System.out.println("Parent constructor");
+    }
+    
+    void display() {
+        System.out.println("Parent method");
+    }
+}
+
+class Child extends Parent {
+    int x = 20;
+    
+    Child() {
+        super();  // Calls parent constructor
+    }
+    
+    void show() {
+        System.out.println(super.x);  // Access parent variable
+        super.display();  // Call parent method
+    }
+}
+```
+
+**💡 Interview One-Liner:** *super keyword refers to parent class object and is used to access parent variables, methods, and constructors.*
+
+---
+
+### 6. Advanced OOP
+
+#### Method Overloading
+
+**What is Method Overloading?**
+- Same method name
+- Different parameter list
+- Happens in **same class**
+- **Compile-time polymorphism**
+
+```java
+class Calculator {
+    int add(int a, int b) {
+        return a + b;
+    }
+    
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+    
+    double add(double a, double b) {
+        return a + b;
+    }
+}
+```
+
+**Rules:**
+- Method name must be same
+- Parameters must be different (number or type)
+- Return type can be different
+
+**💡 Interview One-Liner:** *Method overloading is defining multiple methods with same name but different parameters in the same class.*
+
+---
+
+#### Method Overriding
+
+**What is Method Overriding?**
+- Child class provides its own implementation of parent method
+- Method name and parameters must be same
+- Happens between **parent and child class**
+- **Runtime polymorphism**
+
+```java
+class Animal {
+    void sound() {
+        System.out.println("Animal makes sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+```
+
+**Rules:**
+- Method signature must be same
+- Return type must be same or covariant
+- Access level cannot be reduced
+- Method must not be `static` or `final`
+
+**💡 Interview One-Liner:** *Method overriding is when child class provides specific implementation of parent class method.*
+
+---
+
+#### Polymorphism
+
+**What is Polymorphism?**
+- **Poly** = Many
+- **Morphism** = Forms
+- One method shows different behavior
+
+**Types:**
+
+**1. Compile-time Polymorphism** (Static)
+- Method Overloading
+- Resolved at compile time
+
+**2. Runtime Polymorphism** (Dynamic)
+- Method Overriding
+- Resolved at runtime
+
+```java
+class Animal {
+    void sound() {
+        System.out.println("Animal sound");
+    }
+}
+
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Bark");
+    }
+}
+
+class Cat extends Animal {
+    void sound() {
+        System.out.println("Meow");
+    }
+}
+
+// Runtime Polymorphism
+Animal a;
+a = new Dog();
+a.sound();  // Bark
+
+a = new Cat();
+a.sound();  // Meow
+```
+
+**Dynamic Method Dispatch:**
+- JVM decides which method to call at runtime
+- Based on object type, not reference type
+
+**💡 Interview One-Liner:** *Polymorphism allows one method to perform different actions based on object type, achieved through overloading and overriding.*
+
+---
+
+#### final Keyword
+
+**What is final?**
+- Used to restrict modification
+- Applied to variables, methods, and classes
+
+**final Variable** - Constant
+```java
+final double PI = 3.14159;
+// PI = 3.14; ❌ Cannot modify
+```
+
+**final Method** - Cannot be overridden
+```java
+class Parent {
+    final void display() {
+        System.out.println("Cannot override");
+    }
+}
+```
+
+**final Class** - Cannot be inherited
+```java
+final class MyClass {
+    // Cannot be extended
+}
+```
+
+**Benefits:**
+- Security
+- Prevents unwanted modification
+- Improves performance
+
+**💡 Interview One-Liner:** *final keyword restricts modification: final variable is constant, final method cannot be overridden, final class cannot be inherited.*
+
+---
+
+#### static Keyword
+
+**What is static?**
+- Belongs to **class**, not object
+- Shared by all objects
+- Memory allocated once
+
+**Static Variable**
+```java
+class Student {
+    static String school = "ABC School";  // Shared
+    String name;  // Individual
+}
+```
+
+**Static Method**
+```java
+class Calculator {
+    static int add(int a, int b) {
+        return a + b;
+    }
+}
+
+// Call without object
+Calculator.add(5, 3);
+```
+
+**Static Block**
+```java
+class Demo {
+    static {
+        System.out.println("Static block executed once");
+    }
+}
+```
+
+**Why main() is static?**
+- JVM can call it without creating object
+- Entry point of program
+
+**Rules:**
+- Static method cannot access non-static variables directly
+- Static method cannot use `this` or `super`
+
+**💡 Interview One-Liner:** *static members belong to class, shared by all objects, and can be accessed without creating object.*
+
+---
+
+#### Abstraction
+
+**What is Abstraction?**
+- Hiding implementation details
+- Showing only essential features
+
+**Achieved through:**
+1. Abstract Classes
+2. Interfaces
+
+**Abstract Class**
+```java
+abstract class Animal {
+    abstract void sound();  // No implementation
+    
+    void sleep() {  // Concrete method
+        System.out.println("Sleeping...");
+    }
+}
+
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Bark");
+    }
+}
+```
+
+**Rules:**
+- Cannot create object of abstract class
+- Can have abstract and concrete methods
+- Abstract method must be in abstract class
+- Child must implement all abstract methods
+
+**💡 Interview One-Liner:** *Abstraction hides implementation details using abstract classes and interfaces.*
+
+---
+
+#### Interface
+
+**What is Interface?**
+- Blueprint of class
+- Contains abstract methods (before Java 8)
+- 100% abstraction
+
+```java
+interface Animal {
+    void sound();  // public abstract by default
+}
+
+class Dog implements Animal {
+    public void sound() {
+        System.out.println("Bark");
+    }
+}
+```
+
+**Types of Interfaces:**
+
+**1. Normal Interface** - Multiple abstract methods
+```java
+interface Calculator {
+    int add(int a, int b);
+    int subtract(int a, int b);
+}
+```
+
+**2. Functional Interface** - Only ONE abstract method
+```java
+@FunctionalInterface
+interface Calculator {
+    int add(int a, int b);
+}
+```
+
+**3. Marker Interface** - No methods (metadata)
+```java
+interface Serializable {
+    // Empty
+}
+```
+
+**Why Multiple Inheritance with Interface?**
+- Interfaces have no implementation
+- No ambiguity
+- Solves diamond problem
+
+```java
 interface A {
     void show();
 }
@@ -451,1540 +928,1014 @@ class C implements A, B {
     public void show() { }
     public void display() { }
 }
+```
 
-Important Interview Points:
+**💡 Interview One-Liner:** *Interface is a blueprint containing abstract methods; Java supports multiple inheritance using interfaces.*
 
-- Java does not support multiple inheritance with classes.
-- Java supports multiple inheritance with interfaces.
-- Diamond problem is main reason.
-- implements keyword is used for interfaces.
+---
 
-One-Line Interview Answer:
+#### Upcasting & Downcasting
 
-- Java supports multiple inheritance using interfaces, not classes, to avoid ambiguity.
+**Upcasting**
+- Converting child object to parent reference
+- Happens **automatically**
+- Safe casting
 
-    Method Overriding:
+```java
+class Animal { }
+class Dog extends Animal { }
 
-- When child class provides its own implementation
-  of parent class method.
-- Method name and parameters must be same.
-- Happens between parent and child class.
+Animal a = new Dog();  // Upcasting (implicit)
+```
 
-Rules of Method Overriding:
+**Access:**
+- Only parent class methods accessible
+- Used for runtime polymorphism
 
-- Method name must be same.
-- Parameter list must be same.
-- Return type must be same or compatible.
-- Access level cannot be reduced.
-- Method must not be static.
+**Downcasting**
+- Converting parent reference to child reference
+- Must be done **explicitly**
+- Not always safe
 
-Runtime Polymorphism:
+```java
+Animal a = new Dog();
+Dog d = (Dog) a;  // Downcasting (explicit)
+```
 
-- Method overriding is runtime polymorphism.
-- Method call depends on object type.
+**When Safe?**
+- When parent reference actually points to child object
+- Otherwise `ClassCastException`
 
-Example in Code:
+**💡 Interview One-Liner:** *Upcasting is implicit conversion of child to parent reference, downcasting is explicit conversion requiring type casting.*
 
-- Class A has add() method.
-- Class B overrides add() method.
-- Child version is called at runtime.
+---
 
-Important Points:
+#### Object Class
 
-- Overriding happens in inheritance.
-- Parent method is replaced by child method.
-- @Override annotation helps avoid mistakes.
+**What is Object Class?**
+- Root class of all classes
+- Every class extends `Object` implicitly
+- Located in `java.lang` package
 
-One-Line Interview Answer:
+**Important Methods:**
 
-- Method overriding is when a child class provides
-  a specific implementation of a parent class method.
+**toString()**
+- Converts object to string
+- Default: `ClassName@HashCode`
+- Should be overridden
 
-     Polymorphism:
-
-- Poly means many.
-- Morphism means behaviour.
-- One method shows different behaviour.
-
-Types of Polymorphism:
-
-1) Compile-time Polymorphism:
-- Method Overloading
-- Happens at compile time.
-- Same method name, different parameters.
-
-2) Run-time Polymorphism:
-- Method Overriding
-- Happens at runtime.
-- Parent reference, child object.
-
-Runtime Polymorphism Example:
-
-A obj;
-obj = new B();
-obj.show();
-
-- Method call depends on object type.
-- Not on reference type.
-
-Dynamic Method Dispatch:
-
-- Process of calling overridden method at runtime.
-- JVM decides which method to execute.
-- Based on object created.
-
-Early Binding:
-- Compile-time binding.
-- Method overloading.
-
-Late Binding:
-- Runtime binding.
-- Method overriding.
-
-Important Interview Points:
-
-- Polymorphism improves flexibility.
-- Parent reference can refer to child object.
-- Overridden method is called at runtime.
-- Achieved using inheritance + overriding.
-
-One-Line Interview Answer:
-
-- Polymorphism allows one method to perform
-  different actions based on object type.
-
-   final Keyword in Java:
-
-- final is used to restrict modification.
-- Used with variable, method, and class.
-
-final Variable:
-
-- Value cannot be changed.
-- Makes variable constant.
-
-Example:
-final double pie = 3.14;
-
-final Method:
-
-- Method cannot be overridden.
-- Used to prevent method modification.
-
-Example:
-final void show()
-
-final Class:
-
-- Class cannot be inherited.
-- Used to stop inheritance.
-
-Example:
-final class Calc
-
-Why use final?
-
-- Provides security.
-- Prevents unwanted modification.
-- Improves code safety.
-
-Important Interview Points:
-
-- final variable → constant
-- final method → no overriding
-- final class → no inheritance
-- final keyword improves security
-
-One-Line Interview Answer:
-
-- final keyword is used to restrict inheritance,
-  overriding, and value modification.
-
-
- Object Class in Java:
-
-- Object class is the parent class of all classes.
-- Every class in Java implicitly extends Object class.
-
-Common Methods of Object Class:
-
-- toString()
-- equals()
-- hashCode()
-- getClass()
-
-toString():
-
-- Converts object into string format.
-- Called automatically when object is printed.
-- Default output is className@hashCode.
-- We override it for readable output.
-
-equals():
-
-- Used to compare two objects.
-- Default equals() compares reference.
-- We override equals() to compare content.
-
-hashCode():
-
-- Returns integer hash value of object.
-- Used in hashing-based collections.
-- If equals() is overridden, hashCode() must also be overridden.
-
-Why override equals() and hashCode()?
-
-- To compare object data, not memory address.
-- Required for HashMap, HashSet, etc.
-
-Important Interview Points:
-
-- Object is the superclass of all classes.
-- equals() compares reference by default.
-- toString() gives object representation.
-- equals() and hashCode() must follow contract.
-
-One-Line Interview Answer:
-
-- Object class is the root class of Java from which all classes are inherited.
-
-
-    Upcasting:
-
-- Converting child object to parent reference.
-- Happens automatically.
-- Safe casting.
-- Parent reference points to child object.
-
-Example:
-A obj = new B();
-
-What we can access in Upcasting?
-
-- Only parent class methods.
-- Child-specific methods are not accessible.
-
-Why Upcasting is used?
-
-- Used for runtime polymorphism.
-- Achieves loose coupling.
-- Helps in method overriding.
-
-
-Downcasting:
-
-- Converting parent reference to child reference.
-- Must be done explicitly.
-- Not always safe.
-- Requires type casting.
-
-Example:
-B obj1 = (B) obj;
-
-When Downcasting is safe?
-
-- When parent reference actually points to child object.
-- Otherwise ClassCastException occurs.
-
-Use Case:
-
-- Used when we need child-specific methods.
-- Common in collections and frameworks.
-
-Important Interview Points:
-
-- Upcasting is implicit.
-- Downcasting is explicit.
-- Upcasting supports polymorphism.
-- Wrong downcasting causes runtime error.
-
-One-Line Interview Answer:
-
-- Upcasting converts child object to parent reference,
-  while downcasting converts parent reference to child object.
-
-   Wrapper Class:
-
-- Wrapper classes convert primitive data types into objects.
-- Each primitive has its own wrapper class.
-
-Primitive and Wrapper Mapping:
-
-- int    → Integer
-- double → Double
-- char   → Character
-- boolean → Boolean
-
-Why Wrapper Classes?
-
-- Some frameworks work only with objects.
-- Collections store only objects.
-- Needed for generics and APIs.
-
-Autoboxing:
-
-- Automatic conversion from primitive to object.
-- Done by JVM.
-
-Example:
-Integer n1 = num;
-
-Unboxing:
-
-- Automatic conversion from object to primitive.
-- Done by JVM.
-
-Example:
-int num2 = n1;
-
-Parsing:
-
-- Converting String to primitive.
-- parseInt(), parseDouble(), etc.
-
-Example:
-Integer.parseInt("24");
-
-Why Java is not purely OOP?
-
-- Java supports primitive data types.
-- Pure OOP languages allow only objects.
-
-Important Interview Points:
-
-- Wrapper classes are immutable.
-- Wrapper classes are in java.lang package.
-- Autoboxing and unboxing introduced in Java 5.
-
-One-Line Interview Answer:
-
-- Wrapper classes are used to convert primitive types into objects.
-
-    Abstract Keyword in Java:
-
-- abstract keyword is used with class and method.
-- Used to hide implementation details.
-
-Abstract Class:
-
-- A class declared using abstract keyword.
-- Cannot create object of abstract class.
-- Can have abstract and non-abstract methods.
-
-Abstract Method:
-
-- Method without body.
-- Only declaration, no implementation.
-- Must be overridden in child class.
-
-Example:
-abstract void drive();
-
-Why abstract method must be in abstract class?
-
-- Abstract method has no body.
-- Normal class must provide implementation.
-- So abstract method is allowed only in abstract class.
-
-Why abstract class is needed?
-
-- To provide common structure.
-- To enforce method implementation in child classes.
-- To achieve abstraction (hiding details).
-
-Concrete Class:
-
-- Normal class.
-- Provides implementation of all abstract methods.
-- Object can be created.
-
-Example:
-class Verna extends Hyundai
-
-Abstract Class Rules:
-
-- Cannot create object.
-- Can have constructor.
-- Can have static methods.
-- Can have non-abstract methods.
-
-Abstract vs Concrete Class:
-
-- Abstract class → incomplete
-- Concrete class → complete
-
-Important Interview Points:
-
-- Abstract class supports inheritance.
-- Abstract class can have final methods.
-- Child must implement all abstract methods.
-- Used when classes are closely related.
-
-Why abstract class can have constructor?
-
-- Abstract class cannot be instantiated directly.
-- But abstract class is inherited by child classes.
-- When child object is created, parent constructor must run.
-- Constructor is used to initialize parent class variables.
-- So abstract class constructor is executed via child class.
-
-Example Flow:
-
-- Child object is created.
-- Parent abstract class constructor runs first.
-- Then child class constructor runs.
-
-Why constructor is needed in abstract class?
-
-- To initialize common variables.
-- To perform setup logic.
-- To ensure parent part is properly initialized.
-
-Important Point:
-
-- Constructor is NOT for object creation only.
-- Constructor is also for initialization.
-
-One-Line Interview Answer:
-
-- Abstract class is used to define a blueprint
-  where some methods are implemented
-  and some are left for child classes.
-
-- Abstract class can have constructor because
-  it is called when child class object is created
-  to initialize parent part of the object.
-
-   Inner Class in Java:
-
-- A class defined inside another class.
-- Inner class can access outer class variables.
-
-Why Inner Class?
-
-- Used for logical grouping.
-- Improves encapsulation.
-- Used when class is tightly coupled with another class.
-
-How to Create Inner Class Object?
-
-- First create outer class object.
-- Then create inner class object using outer object.
-
-Syntax:
-OuterClass.InnerClass obj = outerObj.new InnerClass();
-
-Example:
-
-A a = new A();
-A.B b = a.new B();
-
-Access Rule:
-
-- Inner class can access all members of outer class.
-- Even private variables can be accessed.
-
-Types of Inner Classes:
-
-- Member Inner Class
-- Static Nested Class
-- Local Inner Class
-- Anonymous Inner Class
-
-Important Interview Points:
-
-- Inner class depends on outer class object.
-- Cannot create inner class object directly.
-- Inner class increases code readability.
-
-One-Line Interview Answer:
-
-- Inner class is a class defined inside another class
-  and it can access outer class members.
-
-   Enum in Java:
-
-- Enum is a special type used to define constants.
-- Enum values are fixed.
-- Enum improves code readability.
-
-Why Enum is Needed?
-
-- To avoid using magic numbers or strings.
-- To make code type-safe.
-- To represent fixed set of values.
-
-Enum Benefits:
-
-- Prevents invalid values.
-- Improves maintainability.
-- Easy to understand.
-
-Important Interview Points:
-
-- Enum is implicitly final.
-- Enum extends java.lang.Enum.
-- Cannot create enum object using new.
-
-Enum Properties:
-
-- Enum constants are public static final by default.
-- Enum can be used in switch statements.
-- Enum can have methods and variables.
-
-One-Line Interview Answer:
-
-- Enum is used to represent a fixed set of constants in Java.
-
-    Serialization in Java:
-
-- Serialization means converting object into byte stream.
-- Used to save object state into file or send over network.
-
-Deserialization in Java:
-
-- Deserialization means converting byte stream back into object.
-- Used to restore object state.
-
-Why Serialization is used?
-
-- To store object in file.
-- To send object over network.
-- Used in distributed systems.
-
-Real Life Example:
-
-- Saving user session.
-- Saving game state.
-- Transferring object between server and client.
-
-Serializable Interface:
-
-- Marker interface.
-- No methods.
-- Used to tell JVM class is serializable.
-
-Example:
-class Student implements Serializable
-
-Interface in Java:
-
-- Interface is a blueprint of class.
-- Contains abstract methods.
-- Used to achieve abstraction.
-
-Types of Interfaces:
-
-1) Normal Interface:
-- More than one abstract method.
-
-2) Functional Interface:
-- Only one abstract method.
-- Also called SAM (Single Abstract Method).
-- Used in Lambda expressions.
-
-Example:
-@FunctionalInterface
-interface A {
-    void show();
+```java
+class Student {
+    String name;
+    
+    @Override
+    public String toString() {
+        return "Student: " + name;
+    }
 }
+```
 
-3) Marker Interface:
+**equals()**
+- Compares two objects
+- Default: compares reference
+- Should be overridden to compare content
 
-- Interface with no methods.
-- Used to mark a class.
-- Example: Serializable, Cloneable
-
-Why Functional Interface?
-
-- Enables Lambda expressions.
-- Reduces boilerplate code.
-- Improves readability.
-
-Important Interview Points:
-
-- Serialization converts object to byte stream.
-- Deserialization restores object.
-- Serializable is marker interface.
-- Functional interface has only one abstract method.
-- Lambda works only with functional interface.
-
-One-Line Interview Answers:
-
-- Serialization is the process of converting object into byte stream.
-- Functional interface contains exactly one abstract method.
-- Marker interface provides metadata to JVM.
-
-      Java 8 Features:
-
-- Lambda Expressions
-- Functional Interface
-- Default methods
-- Stream API
-- Optional class
-- Method Reference
-- Date and Time API
-
-Functional Interface:
-
-- Interface with only one abstract method.
-- Also called SAM (Single Abstract Method).
-- Used with Lambda expressions.
-
-Example:
-@FunctionalInterface
-interface A {
-    int add(int a, int b);
+```java
+@Override
+public boolean equals(Object obj) {
+    if (this == obj) return true;
+    if (obj instanceof Student) {
+        Student s = (Student) obj;
+        return this.name.equals(s.name);
+    }
+    return false;
 }
-
-Lambda Expression:
-
-- Short form of anonymous class.
-- Introduced in Java 8.
-- Used to implement functional interface.
-Syntax of Lambda:
-
-(parameters) -> expression
-
-Example:
-(i, j) -> i + j
-
-Important Interview Points:
-
-- Lambda works only with functional interface.
-- @FunctionalInterface is optional but recommended.
-- Lambda provides implementation at runtime.
-
-One-Line Interview Answer:
-
-- Lambda expression is a concise way to implement
-  functional interfaces introduced in Java 8.
-
-
-    Exception in Java:
-
-- Exception is an unwanted event.
-- Occurs during program execution.
-- Disrupts normal flow of program.
-
-What is Error?
-
-- Error is a serious problem.
-- Cannot be handled by program.
-- Example: OutOfMemoryError.
-
-Types of Errors:
-
-1) Compile-Time Error:
-- Occurs during compilation.
-- Syntax mistakes.
-- Detected by compiler.
-
-Example:
-System.out.Println("Hi");
-
-2) Run-Time Error:
-- Occurs while program is running.
-- Also called exception.
-- Detected by JVM.
-
-Example:
-5 / 0
-
-3) Logical Error:
-- Program runs but gives wrong output.
-- Due to wrong logic.
-- Not detected by compiler or JVM.
-
-Exception Handling:
-
-- Used to handle runtime errors.
-- Prevents program from crashing.
-
-try block:
-- Code that may cause exception.
-
-catch block:
-- Handles exception.
-
-finally block:
-- Executes always (optional).
-
-Important Interview Points:
-
-- Exception occurs at runtime.
-- Errors are not recoverable.
-- try-catch handles exceptions.
-- JVM throws exception object.
-
-One-Line Interview Answer:
-
-- Exception is a runtime problem that
-  interrupts normal program execution.
-
-   How to Take Input in Java:
-
-- Java provides multiple ways to take input.
-- Most commonly used:
-  - Scanner
-  - BufferedReader
-
-  Scanner:
-
-- Easy to use.
-- Supports different data types.
-- Slower compared to BufferedReader.
-- Belongs to java.util package.
-
-Example:
-Scanner sc = new Scanner(System.in);
-int num = sc.nextInt();
-
-BufferedReader:
-
-- Faster than Scanner.
-- Used with InputStreamReader.
-- Reads input as String.
-- Requires parsing.
-
-Example:
-BufferedReader br =
-    new BufferedReader(new InputStreamReader(System.in));
-int num = Integer.parseInt(br.readLine());
-
-Difference (Interview):
-
-- Scanner → easy, slow
-- BufferedReader → fast, complex
-
-finally Keyword:
-
-- finally block always executes.
-- Used to close resources.
-- Executes whether exception occurs or not.
-
-Why finally is Important?
-
-- Prevents memory leak.
-- Ensures file, DB, network connections are closed.
-Use Cases of finally:
-
-- Closing files
-- Closing database connections
-- Closing network streams
-
-Important Interview Points:
-
-- finally runs even if exception is not handled.
-- finally runs even if return statement exists.
-- finally does not run only when JVM crashes.
-One-Line Interview Answer:
-
-- finally block is used to execute cleanup code
-  like closing resources regardless of exception.
-
-    Thread in Java:
-
-- Thread is a lightweight process.
-- Used to perform multiple tasks at same time.
-- Helps in parallel execution.
-
-Why Thread is Needed?
-
-- To improve performance.
-- To utilize CPU cores efficiently.
-- To run tasks simultaneously.
-
-Thread Flow (System Level):
-
-H/W → OS → JVM → Thread Scheduler → CPU Cores
-
-Thread Scheduler:
-
-- Part of JVM.
-- Decides which thread runs.
-- Uses time-slicing and priority.
-
-How Thread Works:
-
-- Multiple threads share CPU time.
-- Scheduler switches between threads.
-- Looks like parallel execution.
-
-Creating Thread in Java (2 Ways):
-
-1) Extending Thread class
-2) Implementing Runnable interface
-
-start() vs run():
-
-- start() creates new thread.
-- run() contains thread logic.
-- Never call run() directly.
-
-sleep():
-
-- Pauses current thread.
-- Time is in milliseconds.
-- Throws InterruptedException.
-
-Multicore System:
-
-- Modern systems have multiple cores.
-- Threads can run truly parallel.
-
-Important Interview Points:
-
-- Thread is smaller than process.
-- JVM handles thread scheduling.
-- start() internally calls run().
-- sleep() pauses current thread.
-
-One-Line Interview Answer:
-
-- Thread is a lightweight sub-process
-  used to achieve multitasking in Java.
-
-    Runnable Interface in Java:
-
-- Runnable is a functional interface.
-- Contains only one method: run().
-- Used to define thread task.
-
-Why Runnable Interface is Needed?
-
-- Java does not support multiple inheritance.
-- If we extend Thread, we cannot extend another class.
-- Runnable solves this problem.
-
-Difference: Thread vs Runnable
-
-Thread:
-- Extends Thread class.
-- Less flexible.
-- Not recommended.
-
-Runnable:
-- Implements Runnable interface.
-- More flexible.
-- Best practice.
-
-Lambda with Runnable:
-
-- Runnable is functional interface.
-- Lambda expression can be used.
-- Reduces code length.
-
-How Runnable Works:
-
-- Runnable defines task.
-- Thread executes task.
-- Thread object is required to start execution.
-
-Why we use Thread class with Runnable?
-
-- Runnable cannot start thread.
-- Thread class starts thread using start().
-
-Benefits of Runnable:
-
-- Supports multiple inheritance.
-- Better design.
-- Separates task from thread.
-
-Important Interview Points:
-
-- Runnable is preferred over Thread.
-- Runnable supports Lambda.
-- Thread.sleep() pauses current thread.
-- start() creates new thread.
-
-One-Line Interview Answer:
-
-- Runnable interface is used to define thread task
-  and provides better flexibility than Thread class.
-
-    Mutation in Java:
-
-- Mutation means modifying shared data.
-- Happens when multiple threads access same variable.
-
-Problem with Mutation:
-
-- Multiple threads modify same data at same time.
-- Leads to inconsistent or wrong output.
-- This problem is called Race Condition.
-
-Thread Safety:
-
-- Thread-safe code ensures correct result.
-- Only one thread can access critical section at a time.
-
-synchronized Keyword:
-
-- Used to make method or block thread-safe.
-- Allows only one thread at a time.
-- Mutation causes race condition.
-- synchronized ensures thread safety
-
-Why synchronized is needed?
-
-- Prevents race condition.
-- Ensures data consistency.
-
-
-One-Line Interview Answer:
-
-- Mutation is modification of shared data by multiple threads
-  and synchronization is used to make it thread-safe.
-
-    Thread Lifecycle in Java:
-
-- Thread lifecycle shows different states
-  of a thread from creation to end.
-
-  1) NEW State:
-
-- Thread object is created.
-- start() not called yet.
-
-Example:
-Thread t = new Thread();
-
-2) RUNNABLE State:
-
-- start() method is called.
-- Thread is ready to run.
-- Waiting for CPU from scheduler.
-
-Method:
-start()
-
-3) RUNNING State:
-
-- Thread is executing run() method.
-- CPU is assigned by scheduler.
-
-4) TIMED_WAITING State:
-
-- Thread is paused for fixed time.
-- Automatically resumes after time.
-
-Methods:
-sleep(time)
-wait(time)
-join(time)
-
-sleep():
-
-- Pauses current thread.
-- Does NOT release lock.
-
-5) WAITING State:
-
-- Thread waits until notified.
-- Releases lock.
-
-Methods:
-wait()
-join()
-
-wait():
-
-- Thread waits for notify().
-- Used in inter-thread communication.
-
-join():
-
-- One thread waits for another to finish.
-- Mostly used by main thread.
-
-6) TERMINATED (Dead) State:
-
-- run() method execution ends.
-- Thread is finished.
-- Thread cannot be restarted.
-
-Thread Lifecycle Flow (Interview Diagram):
-
-NEW
- ↓ start()
-RUNNABLE
- ↓ scheduler
-RUNNING
- ↓ sleep / wait / join
-WAITING / TIMED_WAITING
- ↓ notify / time over
-RUNNABLE
- ↓ execution complete
-TERMINATED
-
-Important Interview Points:
-
-- start() creates a new thread.
-- run() contains thread logic.
-- join() makes one thread wait.
-- sleep() pauses thread temporarily.
-- stop() is deprecated and unsafe.
-
-Real Life Example:
-
-- File download
-- Online payment
-- Video streaming
-- Printing job
-
-One-Line Interview Answer:
-
-- Thread lifecycle represents different states
-  a thread goes through from creation to termination.
-
-      Collection API in Java:
-
-- Collection API is a framework.
-- Used to store and manipulate group of objects.
-- Located in java.util package.
-
-Why Collection API?
-
-- Dynamic size (no fixed size like array).
-- Provides ready-made methods.
-- Improves performance and code readability.
-
-Collection Interface:
-
-- Root interface of Collection framework.
-- Represents group of objects.
-- Does NOT store primitives (only objects).
-
-Example:
-Collection<Integer> c;
-
-Common Methods of Collection Interface:
-
-- add()
-- remove()
-- size()
-- contains()
-- clear()
-
-Collection vs Collections:
-
-Collection (Interface):
-- Interface
-- Used to store objects
-- Part of Collection hierarchy
-
-Collections (Class):
-- Utility class
-- Contains static helper methods
-- Used for sorting, searching, etc.
-
-Example:
-
-Collections.sort(list);
-Collections.reverse(list);
-
-ArrayList:
-
-- Implements List interface.
-- Allows duplicate values.
-- Maintains insertion order.
-- Not thread-safe.
-
-Why use Interface Reference?
-
-Collection<Integer> c = new ArrayList<>();
-
-- Achieves loose coupling.
-- Easy to change implementation.
-
-Important Interview Points:
-
-- Collection stores objects, not primitives.
-- ArrayList allows duplicates.
-- Collection API is part of java.util.
-- Collections is a utility class.
-
-One-Line Interview Answer:
-
-- Collection API is a framework that provides
-  classes and interfaces to store and manipulate
-  groups of objects.
-
-   Collection (Interface)
- |
- |-- List (Interface)
- |     |-- ArrayList
- |     |-- LinkedList
- |     |-- Vector
- |
- |-- Set (Interface)
- |     |-- HashSet
- |     |-- LinkedHashSet
- |     |-- TreeSet
- |
- |-- Queue (Interface)
-       |-- PriorityQueue
-       |-- ArrayDeque
+```
+
+**hashCode()**
+- Returns integer hash value
+- Used in HashMap, HashSet
+- Must override when equals() is overridden
+
+**💡 Interview One-Liner:** *Object class is the superclass of all Java classes containing methods like toString(), equals(), and hashCode().*
+
+---
+
+### 7. Exception Handling
+
+#### What is Exception?
+
+**Exception:**
+- Unwanted event during program execution
+- Disrupts normal flow
+
+**Error vs Exception:**
+- **Error** - Serious problem (OutOfMemoryError)
+- **Exception** - Recoverable problem
+
+**Types of Errors:**
+
+**1. Compile-Time Error**
+- Syntax mistakes
+- Detected by compiler
+```java
+System.out.Println("Hi");  // ❌ Println (capital P)
+```
+
+**2. Run-Time Error (Exception)**
+- Occurs while running
+- Detected by JVM
+```java
+int result = 5 / 0;  // ArithmeticException
+```
+
+**3. Logical Error**
+- Wrong output
+- Not detected
+```java
+int sum = a - b;  // Should be a + b
+```
+
+---
+
+#### Exception Handling
+
+**try-catch-finally**
+```java
+try {
+    int result = 10 / 0;
+} catch (ArithmeticException e) {
+    System.out.println("Cannot divide by zero");
+} finally {
+    System.out.println("Always executes");
+}
+```
+
+**finally Block:**
+- Executes always
+- Used to close resources
+- Prevents memory leaks
+
+**Use Cases:**
+- Close file connections
+- Close database connections
+- Release network resources
+
+**When finally doesn't execute:**
+- JVM crash
+- System.exit()
+
+**💡 Interview One-Liner:** *Exception is a runtime problem handled using try-catch-finally blocks to prevent program crashes.*
+
+---
+
+### 8. Collections Framework
+
+#### Collection API
+
+**What is Collection?**
+- Framework to store and manipulate objects
+- Located in `java.util` package
+- Works only with objects (not primitives)
+
+**Benefits:**
+- Dynamic size
+- Ready-made methods
+- Improved performance
+
+**Collection Hierarchy:**
+```
+Collection (Interface)
+├── List
+│   ├── ArrayList
+│   ├── LinkedList
+│   └── Vector
+├── Set
+│   ├── HashSet
+│   ├── LinkedHashSet
+│   └── TreeSet
+└── Queue
+    ├── PriorityQueue
+    └── ArrayDeque
 
 Map (Not part of Collection)
- |
- |-- HashMap
- |-- LinkedHashMap
- |-- TreeMap
- |-- Hashtable
+├── HashMap
+├── LinkedHashMap
+├── TreeMap
+└── Hashtable
+```
 
- Collection API:
+**💡 Interview One-Liner:** *Collection API is a framework providing classes and interfaces to store and manipulate groups of objects.*
 
-- Framework for storing and manipulating objects.
-- Located in java.util package.
-- Works only with objects (not primitives).
+---
 
-List Interface:
+#### List Interface
 
-- Allows duplicate values.
-- Maintains insertion order.
-- Index-based access.
+**Properties:**
+- Allows duplicate values
+- Maintains insertion order
+- Index-based access
 
-add()
-add(index, value)
-get(index)
-set(index, value)
-remove(index)
-size()
-contains()
+**ArrayList**
+```java
+List<String> list = new ArrayList<>();
+list.add("Java");
+list.add("Python");
+list.add(1, "C++");  // Insert at index
+list.get(0);         // Access by index
+list.set(0, "JavaScript");  // Update
+list.remove(1);      // Remove by index
+list.size();         // Size
+```
 
-Set Interface:
+**When to use:**
+- Frequent read operations
+- Random access needed
+- Not thread-safe
 
-- Does NOT allow duplicate values.
-- No index-based access.
-- Used for unique data.
+**💡 Interview One-Liner:** *ArrayList is a dynamic array that allows duplicates, maintains order, and provides fast random access.*
 
-add()
-remove()
-contains()
-size()
+---
 
-Queue Interface:
+#### Set Interface
 
-- Follows FIFO (First In First Out).
-- Used in scheduling, messaging.
+**Properties:**
+- No duplicate values
+- No index-based access
+- Stores unique elements
 
-offer()  → add element
-poll()   → remove element
-peek()   → view head
+**HashSet**
+```java
+Set<String> set = new HashSet<>();
+set.add("Java");
+set.add("Python");
+set.add("Java");  // Ignored (duplicate)
+set.contains("Java");  // true
+set.remove("Python");
+set.size();
+```
 
-ArrayList:
+**When to use:**
+- Unique elements needed
+- Order not important
+- Fast performance
 
-- Implements List interface.
-- Allows duplicate elements.
-- Maintains insertion order.
-- Dynamic size.
-- Not thread-safe.
+**TreeSet** - Sorted order
+```java
+Set<Integer> treeSet = new TreeSet<>();
+treeSet.add(30);
+treeSet.add(10);
+treeSet.add(20);
+// Output: [10, 20, 30] (sorted)
+```
 
-add()
-add(index, value)
-get(index)
-set(index, value)
-remove(index)
-size()
-contains()
-clear()
+**💡 Interview One-Liner:** *Set stores only unique elements; HashSet is fast but unordered, TreeSet maintains sorted order.*
 
-- Collection Framework provides classes and interfaces
-  to store, retrieve, and manipulate groups of objects.
+---
 
-    Set in Java:
+#### Map Interface
 
-- Set is an interface.
-- Does NOT allow duplicate elements.
-- Stores only unique values.
+**What is Map?**
+- Stores key-value pairs
+- Keys are unique
+- Values can be duplicate
 
-Important Properties of Set:
+**HashMap**
+```java
+Map<String, Integer> map = new HashMap<>();
+map.put("Alice", 85);
+map.put("Bob", 90);
+map.put("Alice", 95);  // Updates value
+map.get("Alice");      // 95
+map.containsKey("Bob");
+map.containsValue(90);
+map.remove("Bob");
+map.keySet();          // All keys
+map.values();          // All values
+```
 
-- No duplicate values allowed.
-- No index-based access.
-- Order is not guaranteed (HashSet).
-
-HashSet:
-
-- Implements Set interface.
-- Uses hashing technique.
-- Fast performance.
-- Does NOT maintain insertion order.
-
-Set vs List (Interview):
-
-- List → allows duplicates, maintains order
-- Set → no duplicates, order not guaranteed
-
-Types of Set:
-
-- HashSet → fastest, no order
-- LinkedHashSet → maintains insertion order
-- TreeSet → sorted order
-
-Use Cases of Set:
-
-- Unique IDs
-- Email addresses
-- Roll numbers
-
-Important Interview Points:
-
-- Set does not allow duplicates.
-- HashSet allows only one null value.
-- TreeSet does not allow null.
-
-One-Line Interview Answer:
-
-- Set is a collection that stores only unique elements.
-
- TreeSet in Java:
-
-- TreeSet implements Set interface.
-- Stores elements in sorted order.
-- Does NOT allow duplicate values.
-
-Important Properties of TreeSet:
-
-- Sorted (ascending by default).
-- No duplicate elements.
-- Does NOT allow null values.
-
-TreeSet vs HashSet:
-
-- HashSet → fast, no order
-- TreeSet → sorted, slower than HashSet
-
-Iterator in Java:
-
-- Used to traverse collections.
-- Works with all Collection types.
-- Forward direction only.
-
-Iterator Methods:
-
-- hasNext() → checks next element
-- next() → returns next element
-- remove() → removes element
-
-Why Iterator is Used?
-
-- Safe traversal.
-- Avoids ConcurrentModificationException.
-- Works with Set, List, Queue.
-
-When to Use Iterator?
-
-- When you don’t need index.
-- When working with Set or TreeSet.
-
-Important Interview Points:
-
-- TreeSet stores unique sorted values.
-- TreeSet does not allow null.
-- Iterator supports forward traversal only.
-
-    Map in Java:
-
-- Map is an interface.
-- Stores data in key-value pairs.
-- Keys are unique.
-- Values can be duplicate.
-
-Why Map is Needed?
-
-- Fast data lookup.
-- Direct access using key.
-- Represents real-world relationships.
-
-Real Life Examples:
-
-- Student → Marks
+**Real-Life Examples:**
 - Username → Password
 - EmployeeID → EmployeeData
+- StudentID → Marks
 
-HashMap:
+**Types:**
+- **HashMap** - No order, allows one null key
+- **LinkedHashMap** - Insertion order
+- **TreeMap** - Sorted by keys
+- **Hashtable** - Thread-safe (legacy)
 
-- Implements Map interface.
-- No order maintained.
-- Allows one null key.
-- Allows multiple null values.
-- Fast performance.
+**💡 Interview One-Liner:** *Map stores key-value pairs where keys are unique; HashMap is fast but unordered.*
 
-Important Map Methods:
+---
 
-- put(key, value)
-- get(key)
-- remove(key)
-- containsKey(key)
-- containsValue(value)
-- keySet()
-- values()
+#### Iterator
 
-Important Behavior:
+**What is Iterator?**
+- Used to traverse collections
+- Forward direction only
+- Safe removal during traversal
 
-- Duplicate key overrides old value.
-- Keys must be unique.
+```java
+List<String> list = new ArrayList<>();
+list.add("Java");
+list.add("Python");
 
-Map vs Collection (Interview):
+Iterator<String> it = list.iterator();
+while (it.hasNext()) {
+    String element = it.next();
+    System.out.println(element);
+}
+```
 
-- Collection stores only values.
-- Map stores key-value pairs.
-- Map is NOT part of Collection hierarchy.
+**Methods:**
+- `hasNext()` - Checks if next element exists
+- `next()` - Returns next element
+- `remove()` - Removes current element
 
-Types of Map:
+**💡 Interview One-Liner:** *Iterator is used to traverse collections in forward direction with safe removal capability.*
 
-- HashMap → no order
-- LinkedHashMap → insertion order
-- TreeMap → sorted order
-- Hashtable → synchronized (legacy)
+---
 
-Important Interview Points:
+#### Comparable vs Comparator
 
-- HashMap is not thread-safe.
-- TreeMap sorts keys.
-- Hashtable is synchronized.
-- Map does not allow duplicate keys.
+**Comparable Interface**
+- Natural ordering
+- Sorting logic inside class
+- `compareTo()` method
+- Only one sorting sequence
 
-    Comparator in Java:
+```java
+class Student implements Comparable<Student> {
+    int marks;
+    
+    public int compareTo(Student s) {
+        return this.marks - s.marks;
+    }
+}
 
-- Comparator is an interface.
-- Used to define custom sorting logic.
-- Located in java.util package.
+Collections.sort(students);
+```
 
-Why Comparator is Needed?
+**Comparator Interface**
+- Custom ordering
+- Sorting logic outside class
+- `compare()` method
+- Multiple sorting sequences
 
-- Default sorting may not be enough.
-- Needed when we want custom order.
-- Used when class cannot be modified.
+```java
+Comparator<Student> byName = (s1, s2) -> s1.name.compareTo(s2.name);
+Comparator<Student> byMarks = (s1, s2) -> s1.marks - s2.marks;
 
-Comparator vs Comparable:
+Collections.sort(students, byMarks);
+```
 
-Comparable:
-- compareTo() method
-- Used for natural ordering
-- Class itself defines sorting
+**💡 Interview One-Liner:** *Comparable is for natural ordering inside class using compareTo(), Comparator is for custom ordering outside class using compare().*
 
-Comparator:
-- compare() method
-- External sorting logic
-- Multiple sorting strategies possible
+---
 
-Comparator Method:
+### 9. Java 8+ Features
 
-compare(o1, o2)
+#### Lambda Expressions
 
-- returns positive → swap
-- returns negative → no swap
-- returns zero → equal
+**What is Lambda?**
+- Short form of anonymous function
+- Introduced in Java 8
+- Works with functional interfaces
 
-Collections.sort():
+**Syntax:**
+```java
+(parameters) -> expression
+(parameters) -> { statements; }
+```
 
-- Used to sort List.
-- Can accept Comparator.
+**Examples:**
+```java
+// No parameters
+() -> System.out.println("Hello")
 
-Syntax:
-Collections.sort(list, comparator);
+// One parameter
+x -> x * x
 
-Real-Life Use Cases:
+// Multiple parameters
+(a, b) -> a + b
 
-- Sort employees by salary
-- Sort students by marks
-- Sort products by price
+// With block
+(a, b) -> {
+    int sum = a + b;
+    return sum;
+}
+```
 
-Important Interview Points:
+**Benefits:**
+- Reduces boilerplate code
+- Improves readability
+- Enables functional programming
 
-- Comparator is functional interface.
-- Used for custom sorting.
-- Allows multiple sorting logic.
+**💡 Interview One-Liner:** *Lambda expression is a concise way to implement functional interfaces introduced in Java 8.*
 
+---
 
-    Comparable in Java:
+#### Functional Interface
 
-- Comparable is an interface.
-- Used for natural sorting.
-- Sorting logic is inside the class.
-- Class compares itself.
+**What is Functional Interface?**
+- Interface with exactly **one abstract method**
+- Also called SAM (Single Abstract Method)
+- Used with lambda expressions
 
-Comparable Method:
+```java
+@FunctionalInterface
+interface Calculator {
+    int calculate(int a, int b);
+}
 
-compareTo(Object o)
+// Lambda implementation
+Calculator add = (a, b) -> a + b;
+Calculator multiply = (a, b) -> a * b;
 
-- returns positive → greater
-- returns negative → smaller
-- returns zero → equal
+System.out.println(add.calculate(5, 3));  // 8
+```
 
-Comparator in Java:
+**Built-in Functional Interfaces:**
+- `Predicate<T>` - boolean test(T t)
+- `Function<T, R>` - R apply(T t)
+- `Consumer<T>` - void accept(T t)
+- `Supplier<T>` - T get()
 
-- Comparator is an interface.
-- Used for custom sorting.
-- Sorting logic is outside the class.
-- Also called third-party sorting.
+**💡 Interview One-Liner:** *Functional interface contains exactly one abstract method and enables lambda expressions.*
 
-Key Difference (Very Important):
+---
 
-Comparable:
-- compareTo()
-- Inside the class
-- Only one sorting logic
+#### Stream API
 
-Comparator:
-- compare()
-- Outside the class
-- Multiple sorting logic possible
+**What is Stream?**
+- Process collections in functional style
+- Introduced in Java 8
+- Does NOT store data
 
-When to Use Comparable?
-
-- When class has a natural order.
-- Example: age, roll number, id
-
-When to Use Comparator?
-
-- When multiple sorting logic is needed.
-- Example: marks, name, salary
-
-Interview One-Line Answer:
-
-- Comparable is used when a class compares itself,
-  Comparator is used when comparison logic is external.
-- Comparator is functional interface.
-- Comparator supports Lambda.
-- Collections.sort() supports both.
-
-    Stream API in Java:
-
-- Stream API is used to process collections.
-- Introduced in Java 8.
-- Works on data in a functional style.
-
-Why Stream API is Needed?
-
-- Reduces boilerplate code.
-- Improves readability.
-- Makes data processing easier.
-- Supports functional programming.
-
-Important Point:
-
-- Stream does NOT store data.
-- It only processes data from collection.
-
-Stream Pipeline:
-
+**Stream Pipeline:**
+```
 Collection → Stream → Operations → Result
+```
 
-Common Stream Operations:
+**Common Operations:**
 
-filter() → select elements
-map()    → transform elements
-sorted() → sort elements
-forEach()→ iterate elements
-reduce() → combine elements
+```java
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
-Stream Characteristics:
+// filter - Select elements
+numbers.stream()
+       .filter(n -> n % 2 == 0)
+       .forEach(System.out::println);  // 2, 4, 6, 8, 10
 
-- No modification of original data.
-- Lazy evaluation.
-- One-time use only.
-Important Interview Points:
+// map - Transform elements
+numbers.stream()
+       .map(n -> n * n)
+       .forEach(System.out::println);  // 1, 4, 9, 16, 25...
 
-- Stream API introduced in Java 8.
-- Stream supports lambda expressions.
-- Stream operations are functional.
-- Streams can be sequential or parallel.
-- Stream API is used to process collections
-  in a functional and declarative way.
+// sorted - Sort elements
+numbers.stream()
+       .sorted((a, b) -> b - a)
+       .forEach(System.out::println);  // 10, 9, 8...
 
-      Sealed Class in Java:
+// reduce - Combine elements
+int sum = numbers.stream()
+                .reduce(0, (a, b) -> a + b);  // 55
+```
 
-- Introduced in Java 17.
-- Used to restrict inheritance.
-- Controls which classes can extend a class.
+**Characteristics:**
+- Lazy evaluation
+- One-time use
+- Does not modify original data
 
-Why Sealed Class is Needed?
+**💡 Interview One-Liner:** *Stream API processes collections in a functional and declarative way using operations like filter, map, and reduce.*
 
-- To control class hierarchy.
-- To improve security.
-- To prevent misuse of inheritance.
+---
 
-Rules of Sealed Class:
+#### Serialization & Deserialization
 
-- Child classes must be:
-  final - Cannot be extended further.
-  sealed - Again restricts its subclasses.
-  non-sealed - Can be extended further.
+**Serialization:**
+- Converting object into byte stream
+- Used to save object state
 
-Sealed Interface:
+**Deserialization:**
+- Converting byte stream back to object
+- Used to restore object state
 
-- Same concept as sealed class.
-- Restricts which classes or interfaces can implement it.
+**Why Needed?**
+- Store object in file
+- Send object over network
+- Used in distributed systems
 
-Real-Life Use Cases:
+**Serializable Interface:**
+- Marker interface (no methods)
+- Tells JVM class can be serialized
 
-- Payment systems
-- User roles (Admin, User, Guest)
-- Vehicle types
-- Notification types
+```java
+class Student implements Serializable {
+    String name;
+    int marks;
+}
+```
 
-Sealed vs Abstract:
+**Real-Life Examples:**
+- Saving user session
+- Saving game progress
+- Transferring data between servers
 
-- Abstract → allows unlimited inheritance
-- Sealed → restricted inheritance
+**💡 Interview One-Liner:** *Serialization converts object to byte stream for storage or transmission; uses Serializable marker interface.*
 
-Important Interview Points:
+---
 
-- Sealed classes give controlled inheritance.
-- Improves maintainability.
-- Works with pattern matching.
-- Requires permits keyword.
+### 10. Multithreading
 
-One-Line Interview Answer:
+#### Thread Basics
 
-- Sealed classes restrict which classes
-  can extend or implement them in Java.
+**What is Thread?**
+- Lightweight process
+- Used for multitasking
+- Enables parallel execution
 
-    Record Class in Java:
+**Why Thread?**
+- Improve performance
+- Utilize CPU cores
+- Run tasks simultaneously
 
-- Introduced in Java 16.
-- Used as Data Carrier class.
-- Automatically creates boilerplate code.
+**Thread Flow:**
+```
+Hardware → OS → JVM → Thread Scheduler → CPU
+```
 
-What Problem Records Solve?
+---
 
-- Too much boilerplate code.
-- Need for getters, constructor, equals, hashCode, toString.
+#### Creating Threads
 
-Record Automatically Provides:
+**Method 1: Extending Thread class**
+```java
+class MyThread extends Thread {
+    public void run() {
+        System.out.println("Thread running");
+    }
+}
 
-- Constructor
-- Getters (name(), salary())
-- equals()
-- hashCode()
-- toString()
+MyThread t = new MyThread();
+t.start();  // Starts new thread
+```
 
-Why Record is Needed?
+**Method 2: Implementing Runnable** (Recommended)
+```java
+class MyRunnable implements Runnable {
+    public void run() {
+        System.out.println("Thread running");
+    }
+}
 
-- To represent immutable data.
-- To reduce code length.
-- To improve readability.
+Thread t = new Thread(new MyRunnable());
+t.start();
+```
 
-Important Properties of Record:
+**Method 3: Lambda (Java 8+)**
+```java
+Thread t = new Thread(() -> {
+    System.out.println("Thread running");
+});
+t.start();
+```
 
-- Record is immutable.
-- All fields are private and final.
-- Cannot extend other classes.
-- Can implement interfaces.
+**start() vs run():**
+- `start()` - Creates new thread
+- `run()` - Contains thread logic
+- Never call `run()` directly
 
-Real-Life Use Cases:
+**💡 Interview One-Liner:** *Thread is a lightweight sub-process; created by extending Thread class or implementing Runnable interface.*
 
+---
+
+#### Thread Lifecycle
+
+**Thread States:**
+
+1. **NEW** - Thread created but not started
+2. **RUNNABLE** - start() called, ready to run
+3. **RUNNING** - Thread executing
+4. **TIMED_WAITING** - Paused for fixed time (sleep, wait)
+5. **WAITING** - Waiting for notification
+6. **TERMINATED** - Execution completed
+
+**Lifecycle Flow:**
+```
+NEW → start() → RUNNABLE → scheduler → RUNNING
+                                          ↓
+                                     sleep/wait
+                                          ↓
+                              WAITING/TIMED_WAITING
+                                          ↓
+                                    notify/timeout
+                                          ↓
+                                      RUNNABLE
+                                          ↓
+                                   execution complete
+                                          ↓
+                                     TERMINATED
+```
+
+---
+
+#### Thread Methods
+
+**sleep()**
+- Pauses current thread
+- Time in milliseconds
+```java
+Thread.sleep(1000);  // 1 second
+```
+
+**join()**
+- Wait for another thread to finish
+```java
+Thread t = new Thread(() -> {
+    System.out.println("Task");
+});
+t.start();
+t.join();  // Main waits for t to finish
+```
+
+**wait() & notify()**
+- Inter-thread communication
+- Used with synchronized block
+```java
+synchronized(obj) {
+    obj.wait();    // Release lock and wait
+    obj.notify();  // Wake up waiting thread
+}
+```
+
+**💡 Interview One-Liner:** *Thread lifecycle has states: NEW, RUNNABLE, RUNNING, WAITING, TIMED_WAITING, and TERMINATED.*
+
+---
+
+#### Thread Safety & Synchronization
+
+**Race Condition:**
+- Multiple threads modify shared data
+- Leads to inconsistent results
+
+**Synchronization:**
+- Makes code thread-safe
+- Only one thread accesses critical section
+
+```java
+class Counter {
+    private int count = 0;
+    
+    public synchronized void increment() {
+        count++;  // Thread-safe
+    }
+}
+```
+
+**synchronized Keyword:**
+- Method level
+- Block level
+- Ensures mutual exclusion
+
+**When to Use:**
+- Shared mutable data
+- Critical section
+- Multiple threads accessing same resource
+
+**💡 Interview One-Liner:** *Synchronization prevents race conditions by allowing only one thread to access critical section at a time.*
+
+---
+
+### 11. Modern Java Features
+
+#### Wrapper Classes
+
+**What are Wrapper Classes?**
+- Convert primitive types to objects
+- Located in `java.lang` package
+
+**Mapping:**
+| Primitive | Wrapper |
+|-----------|---------|
+| int | Integer |
+| double | Double |
+| char | Character |
+| boolean | Boolean |
+
+**Autoboxing** - Automatic primitive to object
+```java
+int num = 10;
+Integer obj = num;  // Autoboxing
+```
+
+**Unboxing** - Automatic object to primitive
+```java
+Integer obj = 20;
+int num = obj;  // Unboxing
+```
+
+**Parsing** - String to primitive
+```java
+int num = Integer.parseInt("123");
+double d = Double.parseDouble("3.14");
+```
+
+**💡 Interview One-Liner:** *Wrapper classes convert primitives to objects; autoboxing and unboxing happen automatically.*
+
+---
+
+#### Enum
+
+**What is Enum?**
+- Special type for constants
+- Fixed set of values
+- Type-safe
+
+```java
+enum Day {
+    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+}
+
+Day today = Day.MONDAY;
+
+// In switch
+switch(today) {
+    case MONDAY:
+        System.out.println("Start of week");
+        break;
+}
+```
+
+**Benefits:**
+- Prevents invalid values
+- Improves readability
+- Type-safe
+
+**Properties:**
+- Implicitly `final`
+- Extends `java.lang.Enum`
+- Cannot create object with `new`
+
+**💡 Interview One-Liner:** *Enum represents a fixed set of constants in a type-safe manner.*
+
+---
+
+#### Inner Classes
+
+**What is Inner Class?**
+- Class defined inside another class
+- Can access outer class members
+
+```java
+class Outer {
+    private int x = 10;
+    
+    class Inner {
+        void display() {
+            System.out.println(x);  // Access outer class
+        }
+    }
+}
+
+// Create object
+Outer outer = new Outer();
+Outer.Inner inner = outer.new Inner();
+inner.display();
+```
+
+**Why Inner Class?**
+- Logical grouping
+- Better encapsulation
+- Tight coupling
+
+**💡 Interview One-Liner:** *Inner class is defined inside another class and can access outer class members including private.*
+
+---
+
+#### Sealed Classes (Java 17)
+
+**What are Sealed Classes?**
+- Restrict which classes can extend/implement
+- Controlled inheritance
+
+```java
+sealed class Shape permits Circle, Rectangle, Triangle {
+}
+
+final class Circle extends Shape { }
+sealed class Rectangle extends Shape permits Square { }
+non-sealed class Triangle extends Shape { }
+```
+
+**Rules:**
+Child must be:
+- `final` - Cannot be extended
+- `sealed` - Restricts its subclasses
+- `non-sealed` - Can be extended freely
+
+**Benefits:**
+- Controlled hierarchy
+- Better security
+- Pattern matching support
+
+**💡 Interview One-Liner:** *Sealed classes restrict which classes can extend or implement them, providing controlled inheritance.*
+
+---
+
+#### Record Classes (Java 16)
+
+**What is Record?**
+- Data carrier class
+- Reduces boilerplate code
+- Immutable by default
+
+```java
+record Student(String name, int marks) { }
+
+// Automatically provides:
+// - Constructor
+// - Getters: name(), marks()
+// - equals(), hashCode(), toString()
+
+Student s = new Student("Alice", 85);
+System.out.println(s.name());  // Alice
+```
+
+**Properties:**
+- All fields are `private final`
+- Immutable
+- Cannot extend other classes
+- Can implement interfaces
+
+**Use Cases:**
 - DTO (Data Transfer Object)
 - API request/response
-- Employee, Student, Product data
+- Simple data holders
 
-One-Line Interview Answer:
+**💡 Interview One-Liner:** *Record class creates immutable data carrier classes with automatic constructor, getters, equals, hashCode, and toString.*
 
-- Record class is used to create immutable
-  data carrier classes with less boilerplate code.
+---
+
+## 🎯 Interview One-Liners
+
+### Quick Revision
+
+| **Topic** | **One-Liner Answer** |
+|-----------|---------------------|
+| **Java** | Object-oriented, platform-independent language where execution starts from main() |
+| **String** | Immutable class stored in String Constant Pool for memory efficiency |
+| **Encapsulation** | Data hiding achieved through private variables and public getters/setters |
+| **Inheritance** | Acquiring properties of parent class for code reuse |
+| **Polymorphism** | One method performing different actions based on object type |
+| **Abstract Class** | Blueprint with abstract methods that must be implemented by child classes |
+| **Interface** | Blueprint containing abstract methods; supports multiple inheritance |
+| **Constructor** | Special method with no return type that initializes objects |
+| **this** | Refers to current object |
+| **super** | Refers to parent class object |
+| **final** | Restricts modification: variable becomes constant, method cannot be overridden, class cannot be inherited |
+| **static** | Belongs to class, shared by all objects, accessed without object creation |
+| **Exception** | Runtime problem handled using try-catch-finally to prevent crashes |
+| **Collection** | Framework for storing and manipulating groups of objects |
+| **ArrayList** | Dynamic array allowing duplicates with fast random access |
+| **Set** | Stores only unique elements |
+| **Map** | Stores key-value pairs with unique keys |
+| **Lambda** | Concise way to implement functional interfaces |
+| **Stream API** | Processes collections in functional and declarative way |
+| **Thread** | Lightweight sub-process for multitasking |
+| **Synchronization** | Prevents race conditions by allowing one thread in critical section |
+| **Wrapper Classes** | Convert primitives to objects with autoboxing/unboxing |
+| **Enum** | Represents fixed set of constants in type-safe manner |
+| **Sealed Class** | Restricts which classes can extend or implement |
+| **Record** | Creates immutable data carrier with less boilerplate |
+
+---
+
+## 💡 How to Use
+
+### For Beginners
+1. Start with **Java Basics** section
+2. Follow the sequence from basics to advanced
+3. Practice code examples in your IDE
+4. Try to explain concepts in your own words
+
+### For Interview Preparation
+1. Read topic-wise notes
+2. Memorize **Interview One-Liners**
+3. Practice coding questions
+4. Review **Real-Life Examples**
+
+### Best Practices
+- Write code for each concept
+- Create your own examples
+- Teach concepts to others
+- Solve coding challenges
+- Review regularly
+
+---
+
+## 📌 Memory Management
+
+### Memory Areas
+
+| **Area** | **Stores** | **Scope** |
+|----------|-----------|----------|
+| **Heap** | Objects, instance variables | Until garbage collected |
+| **Stack** | Local variables, references | Method lifetime |
+| **Method Area** | Static variables, class metadata | Program lifetime |
+| **String Pool** | String literals | Program lifetime |
+
+---
+
+## 🔑 Important Rules
+
+### Class Rules
+- One public class per `.java` file
+- File name must match public class name
+- Class names start with uppercase
+
+### Constructor Rules
+- Cannot be `static`
+- Cannot be inherited
+- No return type
+- Runs once per object
+
+### Inheritance Rules
+- Child can access parent methods
+- Parent cannot access child-specific methods
+- Multiple inheritance not supported with classes
+- Use `extends` for classes, `implements` for interfaces
+
+### String Rules
+- Use `equals()` for content comparison
+- `==` compares reference
+- Strings are immutable
+- String pool improves efficiency
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Here's how you can help:
+
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/improvement`)
+3. **Commit** your changes (`git commit -m 'Add improvement'`)
+4. **Push** to branch (`git push origin feature/improvement`)
+5. **Open** a Pull Request
+
+### What to Contribute
+- Fix typos or errors
+- Add more examples
+- Improve explanations
+- Add new topics
+- Create practice questions
+
+---
+
+## 📧 Contact
+
+For questions, suggestions, or feedback:
+
+- **GitHub Issues**: [Create an issue](https://github.com/yourusername/core-java-notes/issues)
+- **Email**: your.email@example.com
+- **LinkedIn**: [Your Profile](https://linkedin.com/in/yourprofile)
+
+---
+
+## ⭐ Show Your Support
+
+If you found this helpful:
+- ⭐ **Star** this repository
+- 🍴 **Fork** for your reference
+- 📢 **Share** with others
+- 💬 **Provide feedback**
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- Java Documentation
+- Community contributions
+- Interview experiences
+- Open-source resources
+
+---
+
+<div align="center">
+
+**Made with ❤️ for Java Learners**
+
+[![GitHub followers](https://img.shields.io/github/followers/yourusername?style=social)](https://github.com/yourusername)
+[![GitHub stars](https://img.shields.io/github/stars/yourusername/core-java-notes?style=social)](https://github.com/yourusername/core-java-notes)
+
+**Happy Learning! 🚀**
+
+</div>
